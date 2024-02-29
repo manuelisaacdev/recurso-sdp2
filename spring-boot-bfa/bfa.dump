@@ -1,0 +1,814 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.1
+-- Dumped by pg_dump version 16.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: contas; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.contas (
+    id uuid NOT NULL,
+    bloqueada boolean DEFAULT false NOT NULL,
+    data_criacao timestamp(6) without time zone NOT NULL,
+    iban character varying(255) NOT NULL,
+    numero_conta character varying(255) NOT NULL,
+    saldo_contabilistico double precision NOT NULL,
+    saldo_disponivel double precision NOT NULL,
+    tipo_conta character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.contas OWNER TO bfa;
+
+--
+-- Name: empresas; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.empresas (
+    id uuid NOT NULL,
+    data_criacao timestamp(6) without time zone NOT NULL,
+    nome character varying(255) NOT NULL,
+    conta_id uuid NOT NULL,
+    funcionario_id uuid NOT NULL,
+    telefone_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.empresas OWNER TO bfa;
+
+--
+-- Name: funcionarios; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.funcionarios (
+    id uuid NOT NULL,
+    bilhete_identidade character varying(255) NOT NULL,
+    data_criacao timestamp(6) without time zone NOT NULL,
+    data_nascimento date NOT NULL,
+    email character varying(255) NOT NULL,
+    foto_perfil character varying(255),
+    genero character varying(255) NOT NULL,
+    morada character varying(255) NOT NULL,
+    nome character varying(255) NOT NULL,
+    papel character varying(255) NOT NULL,
+    senha character varying(255) NOT NULL,
+    pais_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.funcionarios OWNER TO bfa;
+
+--
+-- Name: paises; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.paises (
+    id uuid NOT NULL,
+    nome character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.paises OWNER TO bfa;
+
+--
+-- Name: pessoas; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.pessoas (
+    id uuid NOT NULL,
+    bilhete_identidade character varying(255) NOT NULL,
+    data_criacao timestamp(6) without time zone NOT NULL,
+    data_nascimento date NOT NULL,
+    email character varying(255),
+    foto_perfil character varying(255),
+    genero character varying(255) NOT NULL,
+    morada character varying(255) NOT NULL,
+    nome character varying(255) NOT NULL,
+    conta_id uuid NOT NULL,
+    funcionario_id uuid NOT NULL,
+    pais_id uuid NOT NULL,
+    telefone_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.pessoas OWNER TO bfa;
+
+--
+-- Name: telefones; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.telefones (
+    id uuid NOT NULL,
+    numero character varying(15) NOT NULL
+);
+
+
+ALTER TABLE public.telefones OWNER TO bfa;
+
+--
+-- Name: telefones_funcionarios; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.telefones_funcionarios (
+    funcionario_id uuid NOT NULL,
+    telefone_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.telefones_funcionarios OWNER TO bfa;
+
+--
+-- Name: tokens; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.tokens (
+    atualizacao text NOT NULL,
+    acesso text NOT NULL,
+    tipo character varying(255) NOT NULL,
+    valido boolean DEFAULT true NOT NULL,
+    funcionario_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.tokens OWNER TO bfa;
+
+--
+-- Name: transferencias_interbancarias; Type: TABLE; Schema: public; Owner: bfa
+--
+
+CREATE TABLE public.transferencias_interbancarias (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    iban_conta_destino character varying(255) NOT NULL,
+    iban_conta_origem character varying(255) NOT NULL,
+    montante double precision NOT NULL,
+    status character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.transferencias_interbancarias OWNER TO bfa;
+
+--
+-- Data for Name: contas; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.contas (id, bloqueada, data_criacao, iban, numero_conta, saldo_contabilistico, saldo_disponivel, tipo_conta) FROM stdin;
+d658fc36-5187-4292-8b8b-dba2b0d163d4	f	2024-02-07 08:15:21.83028	AO02000400001967993991403225	1967993991403225	2500	2500	Pessoal
+334df172-ca37-4484-87f6-33c35e83e774	f	2024-02-07 08:16:29.973497	AO02000400007123746060232411	7123746060232411	5500	5500	Pessoal
+74732e0f-ccde-42bf-9626-be9fe8a2c970	f	2024-02-07 08:14:03.435464	AO02000400008175620309964053	8175620309964053	10390	10390	Pessoal
+\.
+
+
+--
+-- Data for Name: empresas; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.empresas (id, data_criacao, nome, conta_id, funcionario_id, telefone_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: funcionarios; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.funcionarios (id, bilhete_identidade, data_criacao, data_nascimento, email, foto_perfil, genero, morada, nome, papel, senha, pais_id) FROM stdin;
+7904ee02-c540-4910-857f-20ba69c7a58a	005977492MO044	2024-02-07 08:06:28.837961	1998-06-22	adelino@gmail.com	\N	Masculino	Rua 121 - Casa 121 - Bairro Moxicano - Viana - Luanda - Angola	Adelino	Gerente de Agência	$2a$10$qI1IPtgLGvvTXgd.D2YxN.ULuo8TaSnxe5VVYTXtPIaMOXVv9QbU.	6ae44f83-e67d-4665-84ac-5c5d12cf4588
+\.
+
+
+--
+-- Data for Name: paises; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.paises (id, nome) FROM stdin;
+c2bbeeb4-2bf8-4231-bdca-b45b994e85ee	Andorra
+64d8e029-5eef-4e84-bffc-4cc1c35e7082	Emirados Árabes Unidos
+9330c215-94f8-46db-9740-03b502335c6f	Afeganistão
+c64c9873-3a28-40dc-b6f5-80a867611aee	Antígua e Barbuda
+1fee3e29-42a9-48e5-bb38-dffc459bd385	Anguila
+7dab8a17-0914-4761-bfcc-d3d53f663120	Albânia
+dcb9cbcd-0929-4937-b858-5d2337676965	Armênia
+6ae44f83-e67d-4665-84ac-5c5d12cf4588	Angola
+8cd4c611-c9c4-4d98-a2f3-413f7aa2ddff	Antártica
+8f1ea5a5-2277-494b-8ee3-184f9237c5a3	Argentina
+b1e3144c-8c0d-45ac-a583-16d7fd378f21	Samoa Americana
+3c492e47-5b92-4aca-9e75-3eb2918924f5	Áustria
+0caffc14-799e-4900-9381-ccb3cacb7eba	Austrália
+38e37306-3494-4db7-b65b-3c065c1f1ae9	Aruba
+8fed20ef-a065-4653-8f20-0413cf9be145	Ilhas Alland
+4a4d0ac2-f60b-44bd-beef-3af98aefd1a8	Azerbaijão
+0b78684a-8002-4c40-93d3-1afb7ffecb36	Bósnia e Herzegovina
+c92185e2-3d41-4cd0-adaf-123c4c5343b0	Barbados
+f820f19e-78dc-4ab6-b502-edbbc3a27515	Bangladesh
+989bc255-5454-4f19-9fbe-aa862302aaa7	Bélgica
+af2ae069-2c9c-4911-9fc3-fa6b729f8234	Burkina Faso
+860f654a-905d-4f86-b686-3ae7fdd2a59a	Bulgária
+5c9b5d8b-fbc6-4c1b-9ec3-9f279be8f9c0	Bahrein
+5c8fadaa-2cae-4a9b-8276-b396637b5c0e	Burundi
+ff89f15d-cd65-4e31-88c1-a4452a678a75	Benin
+f1758632-6602-405a-aac5-bd6b5adafa08	São Bartolomeu
+e78ebf03-d536-45a3-9368-f6c0f7d2af13	Bermudas
+7046b769-93bb-4d87-b939-0166e569d9fc	Brunei Darussalam
+48a037ed-006a-4ec4-b5cf-93655dcb09ee	Bolívia
+e7f4d25e-1fcd-4f07-ac4b-7a520c233f75	Brasil
+0488855f-4752-49ae-8c02-d92abf299c5f	Bahamas
+4e21d7b3-583d-4c89-aa52-a86ca816fc97	Butão
+ffc685b8-f565-47b7-918e-80260263dde8	Ilha Bouvet
+dd4f12d6-44b8-4430-a850-03abdff6706c	Botsuana
+5a8fe42b-cf43-4eed-8d31-4d0d43626143	Bielorrússia
+1e82df85-2a69-4387-961c-4c28b9275efd	Belize
+f40d9781-6ac6-44fd-b512-785b0f2bd328	Canadá
+d322d6f1-2664-4789-ab13-e23b30587771	Ilhas Cocos (Keeling)
+dd7861a3-ac11-42ad-829a-7f6873dbc20b	Congo, República Democrática do
+62e5d30b-6387-4105-b451-327a2aa74eab	República Centro-Africana
+e74d13f0-f0e7-480a-8268-eba2adbaa7dc	Congo, República do
+33738e9a-b03c-4d4f-9f9c-b34156a59c44	Suíça
+f9ef6c60-3021-42e0-9a36-cdf66b015568	Costa do Marfim
+e9c165d9-73ad-495e-b617-c47092b35e59	Ilhas Cook
+485fbdd6-d5f8-406e-bacb-8f7e96abb436	Chile
+e8f20d3f-f795-4ed5-b362-b3ebd012ec23	Camarões
+175d09e5-3c4a-4f97-9e95-6748450dd697	China
+edf1a02f-ecac-416c-96f8-393b353c5889	Colômbia
+1b48d351-e66b-4739-b01b-5e7080124b3e	Costa Rica
+dd442a6d-e900-48bb-962a-6241136bfe57	Cuba
+56fa6728-8cb7-4286-9118-6c0c1427fbb0	Cabo Verde
+24685f93-be5a-4467-945f-7b52e9781f82	Curacao
+96dc9960-a229-4590-ba4b-2cee993925c1	Ilha de Natal
+734f4bce-111a-4c21-9c8a-463539a0dd23	Chipre
+3a3b170b-0bbc-449d-8382-252ededddbab	República Tcheca
+26e31cd3-acde-4efd-8a98-6653054f9cf5	Alemanha
+f8edad63-cc3f-41bf-af87-f8aecf4c2017	Djibuti
+ac25a956-db18-4513-a631-c64cf7ff6102	Dinamarca
+a0a36094-ecd3-47d9-a28d-8f0a674677d6	Dominica
+a9eca626-9743-412b-8b3c-1843aefbca78	República Dominicana
+ec15ec0c-d0a3-4adc-9f2c-ccc2f1424696	Argélia
+dd3efe77-cdae-4e24-8289-7fb84937f509	Equador
+7805dec5-f494-468f-b876-7af30c3af6e1	Estônia
+0f614a76-351b-4745-8309-456841dfa761	Egito
+c04b4673-e52d-43c9-80ff-2eaa8d97d20e	Saara Ocidental
+fcd22107-a264-42f7-b318-0015e3b582b4	Eritreia
+544a0085-f923-449e-83f8-b6092662a145	Espanha
+95840dd5-3b89-45fd-994a-4ba1298929b0	Etiópia
+a2db5780-d9f1-4e85-bf3e-a08ec396ccb3	Finlândia
+c4ed828e-8c9a-47cd-8f3a-2fa8624a11fa	Fiji
+fd3cd23d-fed5-476f-9def-0c69d8eaec27	Ilhas Falkland (Malvinas)
+e2cdf126-2cf0-4182-b29a-611e2f025475	Micronésia, Estados Federados de
+98335b76-6b53-4223-a336-edb5caf0d3d4	Ilhas Faroé
+f6eef9bf-3673-451d-8ffe-fe122f73f1a7	França
+eb646fea-6298-4c62-8064-c43c370ac2bb	Gabão
+04c107d1-f9eb-44e0-8123-f3df56ff88e1	Reino Unido
+4684d009-093b-4513-8e21-07b9c5c21825	Grenada
+d616bb28-df71-4b1a-bc2d-bd55375613c9	Geórgia
+679f1c67-50b1-48a1-8be2-06c070aa6db9	Guiana Francesa
+24e32ac4-90af-4746-9117-6f9bc9174947	Guernsey
+ffff790a-872b-4f40-8b68-f0e7b3bf5535	Gana
+26b362c4-77b8-4858-8f95-e492d53a185b	Gibraltar
+4de7808e-0004-494d-bd87-1c6edc64c5d9	Groenlândia
+e0075798-3f68-4e5a-a99c-2ff46aea9653	Gâmbia
+2964251b-cc7d-4282-8fb4-2efe07a4691d	Guiné
+5321f093-0406-459c-91b1-44225714eb68	Guadalupe
+306f944d-1689-45a1-a809-d027fe10c904	Guiné Equatorial
+8e43b018-2fdd-4c61-8943-bbfc5623ea81	Grécia
+9486fc04-92f8-4bcd-8029-9a56c5a95e0c	Geórgia do Sul e Ilhas Sandwich do Sul
+29b20620-3fc9-4f6d-b4ec-70267e4d3001	Guatemala
+b43730ef-957b-4d50-95d5-377899ee1f23	Guam
+8a714412-6369-4bb0-b584-7df774527155	Guiné-Bissau
+ef4b5116-d89f-4d37-88e1-7cc266428aa5	Guiana
+7680ab40-0a22-42af-9ae3-80d1ebe5bd6b	Hong Kong
+dd90dc1c-44c5-4533-8f78-a4da9425e8a9	Ilha Heard e Ilhas McDonald
+f4975b44-83d2-4e84-a52c-06fb37c31233	Honduras
+6e042e28-30e6-4447-8124-63299c714f20	Croácia
+3cb7ac75-50dc-4fa8-9f21-2602d3e69599	Haiti
+df951b8f-a8f4-47fa-a1a4-c006f7913e89	Hungria
+fbfb3cca-d9f6-44ac-b2fe-8c7451ba1832	Indonésia
+7bc564c4-87f6-408b-a2d6-f449042d2de5	Irlanda
+9274d267-c96c-452e-9028-c528a16acbdf	Israel
+865084e1-5fea-4605-9c10-9e004fcc219d	Ilha de Man
+a79c16c3-f735-46dd-86b2-5a35cfed92da	Índia
+64b6db60-ce4d-4276-b83d-656fb9dcbab6	Território Britânico do Oceano Índico
+38ecbdb3-965e-4a8a-bf6a-ad663d5c2260	Iraque
+0e81d114-2c69-4b9d-a89d-c1e15e3626ea	Irã, República Islâmica do
+35a5bdcf-f18e-4705-8b1b-89c1f3172fc7	Islândia
+a4b73fb4-74c4-49b2-a510-fc0a5e7ae617	Itália
+a7331ff5-041c-430b-85d5-6519cb4b04cd	Jersey
+cb32e109-35cd-4675-b1a3-c6e8400e7197	Jamaica
+179bf41f-3552-4c27-b411-98239ac781c7	Jordan
+183def3a-c53e-4abb-a875-9d14deaf34ae	Japão
+ca2454c0-7571-4599-9ca1-743c7029238b	Quênia
+824cba65-a479-43fe-ac97-79e40a278e00	Quirguistão
+e4f6d50f-159a-46b7-a91f-40aa55f691f2	Camboja
+a416dab5-2696-451d-b495-7aa84c3d9566	Kiribati
+7ca4652b-1700-48f7-ac03-35216abdc82d	Comores
+148d2a0f-5988-4f4f-886f-cc43f0c4436f	São Cristóvão e Nevis
+d5b35e46-56de-49c3-a0f0-743561b1db98	Coreia, República Popular Democrática da
+239eb72c-706e-47ea-8e67-94509feca077	Coréia, República da
+314f2989-bc4e-4a3c-8eb2-8dcbcc64ba80	Kuwait
+2b0af614-e90c-4eab-85a8-cb1c6586e36f	Ilhas Cayman
+415c65a5-23c1-4d5f-9ed5-f51f42570f1d	Cazaquistão
+d6614730-abb2-4b5f-8867-2a88b8cd170e	República Democrática Popular do Laos
+36131f73-bc00-4075-bedc-9dd568b245a7	Líbano
+d89d5e09-9669-4180-ad81-859132c6e5bb	Santa Lúcia
+c88b1086-9cf6-4e0c-b567-aa6470cb0967	Liechtenstein
+5e8dd0d3-e461-4c20-9f8c-806ea65bad3e	Sri Lanka
+5b897aea-edcd-4f9c-845f-ac46ea4ea1d3	Libéria
+95e28ce8-c717-46a8-97a5-75f6124c2e27	Lesoto
+fc28b081-f9bf-4225-b774-406f7e656540	Lituânia
+fbf09ec2-770a-49f8-8f0e-06ddc32fd723	Luxemburgo
+c659a082-8ecf-4d22-a68d-34f6212d3bc0	Letônia
+6e088d4e-11b6-4b27-a95c-5e2d002c7017	Líbia
+6d54f858-61bb-4c88-a5ad-e66bc29f4c34	Marrocos
+2a28f779-72c9-4d4e-a769-f3fae527eff3	Mônaco
+2a8b3b4a-c5a6-4218-b355-e50d9cc81774	Moldávia, República da
+2c91573e-7766-4951-9405-e811afbfdf90	Montenegro
+c6605c96-c664-47f1-a06b-30c48fa1ffe3	Saint Martin (parte francesa)
+314927c4-2daa-4f71-89ac-8c636da4ea17	Madagascar
+59380e7d-fc19-4118-a04e-e3cb43216862	Ilhas Marshall
+4caced83-0908-4662-8de2-d7f093815526	Macedônia, Antiga República Iugoslava da
+514c1441-6dfa-4d4f-9cf8-6f6819bc4ed2	Mali
+e126cb2f-e547-4dc4-8e99-f92f31b2b471	Mianmar
+789588fa-07f0-4e82-8a73-5618df86f121	Mongólia
+d6c2c6fb-2123-4b43-b4a0-c3cf0fdec65f	Macau
+2207f449-4043-4290-ac65-73e727f5db05	Ilhas Marianas do Norte
+89f8c0c9-b16d-4dde-963f-d90d013bfb06	Martinica
+fdbe5e38-c1c3-4566-b122-dda58397dfad	Mauritânia
+7932f27f-0845-4c09-9150-78bf4222efc1	Montserrat
+dfea9611-9a44-43ef-9549-18518f573296	Malta
+9c50a659-54c7-4f71-96c0-53c874cd12cf	Maurício
+e84108b6-3b32-41a5-ad2d-65b8b11ac51c	Maldivas
+9720e6eb-ab83-4546-891f-02a6b6d5a948	Malauí
+e30ba0a7-6cf7-477f-9a9c-343a5fcf1646	México
+a69d8763-064e-49da-8e92-07eb524f5ed5	Malásia
+9c2e603c-1445-4491-b01a-d68a7a76b04b	Moçambique
+0b8e26b0-2754-4fa2-9215-605f13758c6a	Namíbia
+42342f50-6fa9-48bf-adef-bed60e02bc10	Nova Caledônia
+b55ce28b-8c58-4474-98cc-8e8aa0216d16	Níger
+c6552467-7170-4409-a48c-bd70947f19b9	Ilha Norfolk
+16103066-4cd9-4cfb-8f79-a6a1d87a766c	Nigéria
+bec49308-338f-4ecd-9190-291bf51d16b6	Nicarágua
+8187e1a2-fb62-427d-b59e-5d6e0282c47b	Holanda
+d11a56c8-eb6e-4dad-ae38-07bbf17422b2	Noruega
+55a65713-78dc-4394-81e7-86f01a18df6d	Nepal
+f8fde90f-d1ed-4fc8-a44a-a14356551784	Nauru
+7bb70b96-6a1f-435d-a31b-6fdefb8c3e89	Niue
+7d83b690-97af-4585-8c65-0595489d731a	Nova Zelândia
+cdf877cb-0724-4aab-8e24-67c8f735807b	Omã
+391a8673-3b96-4324-a46f-65afcc0b8229	Panamá
+2654a6b8-7a12-4672-b2b8-8b8437b0d817	Peru
+12acf7dd-fded-427c-a438-2b00cc3c3c39	Polinésia Francesa
+256bdf26-bef4-47f3-b2d8-60535748d2f4	Papua Nova Guiné
+698bc3f2-684d-4093-b8f1-a15eb84abcf2	Filipinas
+a1def7ea-7f64-4b59-a9b9-56c3e733d1c5	Paquistão
+0efb1600-fdc5-4636-b946-0763a7ff957f	Polônia
+c347fb66-ab38-4843-83f3-0bdb52195a00	São Pedro e Miquelon
+41247e22-1801-4b8b-ae65-7fad6c0f023e	Pitcairn
+c0539868-9dff-4b13-a105-3354c5dc1997	Porto Rico
+b43b2b68-f8a3-48ca-ae6c-9ae2e55da871	Palestina, Estado de
+9ddacb00-3ed2-40f5-beb1-3a2b93e7c3c6	Portugal
+e4c831e4-4d61-4028-a724-abdd3406ae55	Palau
+292164c7-702b-4c21-96da-a51b5c0b34f4	Paraguai
+749923e6-5a10-45bb-a9fe-e42425bca2fa	Qatar
+e6d18b79-4298-4e33-8b2c-27b2fc0f7135	Reunião
+ec1ab5f4-236c-468c-b63e-170336ce728b	Romênia
+de9f5037-8e70-4b32-9c6a-47b086cf5ccb	Sérvia
+5d844ad8-b02b-4733-84f7-4b853cf28031	Federação Russa
+b219ce6a-0dd2-4e66-97cc-42e6b78e906a	Ruanda
+ac54da8a-15bd-424b-8aee-54edfb6d4660	Arábia Saudita
+a10ac7d2-42e5-454e-a3ea-fbe7ba86c827	Ilhas Salomão
+d9463e8c-c84e-4e21-9499-c073cba0913c	Seychelles
+75fa3cce-0903-4554-8d42-71b7ac66ad4f	Sudão
+a13fe53e-655d-4d6c-a5ac-2b250f308a40	Suécia
+e0fa3538-78d2-4443-b139-a19d5afb2280	Cingapura
+1ca33f91-d6ca-443a-9633-60599286e652	Santa Helena
+3b2091fb-c750-4373-a507-3448c8bfb690	Eslovênia
+44e919d0-0a02-464b-8f21-c7304b693000	Svalbard e Jan Mayen
+09ffe468-f28f-411e-b84f-078b999d16b0	Eslováquia
+809e7e52-1fa8-4204-9766-a7c5383ada4b	Serra Leoa
+05fd2fa1-92aa-42da-8cef-99656129feee	San Marino
+4540b27e-f1fa-404f-ae1a-68fc58d54c32	Senegal
+989cba14-29f8-41fe-80f6-eb11b2825728	Somália
+0fb94d00-6f56-46a8-b006-dd54e55aad32	Suriname
+d018c792-3ab8-47e2-bb9d-0804e66310b0	Sudão do Sul
+fe2cd7a6-3af9-40de-aced-dca045742dca	São Tomé e Príncipe
+7ee5816d-3a40-4fda-adde-073a802309ac	El Salvador
+d0e92ccf-dff3-447e-9461-1ec4735ad4c3	Sint Maarten (parte holandesa)
+3a782da2-0318-4e22-9251-243905e04057	República Árabe Síria
+f9269b6c-051e-4d4a-95fa-859644d1588b	Suazilândia
+528b0738-ac53-40a2-a7cc-21312ebf8800	Ilhas Turcas e Caicos
+5ab385e6-4adf-4dd1-8ca5-5475700f1263	Chade
+e802f2ec-38fe-495b-870a-66d5ba8e5667	Territórios Franceses do Sul
+47329db4-b4a5-433e-9bbe-502108626d66	Togo
+34286e00-e671-4eb4-984c-b099d14d7145	Tailândia
+589da22e-da75-4076-9dff-e49c96f8566d	Tajiquistão
+ea981a5a-20ea-4a5f-862d-0f655a92b3e8	Tokelau
+cfecf782-a065-47e9-a688-fa647acbd171	Timor-Leste
+a7fefb3d-b933-486c-8005-0826b927d5b4	Turquemenistão
+b28c25c3-be9b-4df3-9f62-ee66b258f462	Tunísia
+f984e691-3d0c-4996-b5f4-cd5456bead48	Tonga
+74b128a2-42e4-4475-9643-05afbe290770	Turquia
+fdc1029e-3265-4f76-8b8e-9581bb1f8d39	Trinidad e Tobago
+86f9f094-402e-4252-be66-97ddb1a292a3	Tuvalu
+eb7a8a7c-925a-4626-8811-2743333c7cbb	Taiwan, República da China
+da54172f-a884-428a-9bd5-c1aef4a0217e	República Unida da Tanzânia
+3a945e1f-b44c-4e6b-82c1-05a6b3917b18	Ucrânia
+a1658363-566f-4f91-a682-c6d541fd774c	Uganda
+616f1862-2acb-4a4f-9577-59c6b940d9d3	Estados Unidos
+482e1a65-ac45-438a-a266-8b83c9880f3f	Uruguai
+f7a84f0d-4eeb-46dd-ad5d-974b57cf4fd1	Uzbequistão
+ac5bf875-4989-4736-8d1c-3e569c1a575c	Santa Sé (Estado da Cidade do Vaticano)
+c5f84791-23a7-4cee-a938-720e15b6758d	São Vicente e Granadinas
+70da16a5-b851-4ac5-972e-645a074aad3a	Venezuela
+7250d1ed-26e4-4534-bd25-fd8f976752f6	Ilhas Virgens Britânicas
+e04ec7a1-2ff5-4c99-b4b1-ce61553e867c	Ilhas Virgens Americanas
+47ae50c1-1d63-4315-bb7f-b56ee48b5298	Vietnã
+17035df8-a957-42d0-b6fa-7d6892fe1dc3	Vanuatu
+34a39f3c-c22c-4441-a098-cdea0c5676e6	Wallis e Futuna
+c1b28945-8f54-4436-9b5d-df278a2d268e	Samoa
+45a79da2-e2bf-495b-b0e7-2da1e34f1c95	Kosovo
+e09c1446-a8dd-4fa3-b2a2-155857d6aa1b	Iêmen
+c24373ae-941e-48de-a078-8bd85bfbbccd	Mayotte
+f13fba47-5be8-40df-aa0f-85d1790831bc	África do Sul
+4b6092ce-6c17-4765-a917-166513298869	Zâmbia
+15c96660-5767-447c-9b88-e99aceeb5f6e	Zimbábue
+\.
+
+
+--
+-- Data for Name: pessoas; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.pessoas (id, bilhete_identidade, data_criacao, data_nascimento, email, foto_perfil, genero, morada, nome, conta_id, funcionario_id, pais_id, telefone_id) FROM stdin;
+d1714814-e6d3-4135-9e9f-3458b01130bc	005977156MO111	2024-02-07 08:14:03.435464	2002-09-20	ritamulato@gmail.com	\N	Feminino	Rua 121 - Casa 121 - Bairro Moxicano - Viana - Luanda - Angola	Rita Mulato	74732e0f-ccde-42bf-9626-be9fe8a2c970	7904ee02-c540-4910-857f-20ba69c7a58a	6ae44f83-e67d-4665-84ac-5c5d12cf4588	55360af5-25a9-44ef-ae55-5e29a8aee031
+6c00fee6-a0ab-4a25-b967-f597c4e6af5d	004494156MO222	2024-02-07 08:15:21.83028	2003-09-20	teresaaugusto@gmail.com	\N	Feminino	Rua 121 - Casa 121 - Bairro Moxicano - Viana - Luanda - Angola	Teresa Augusto	d658fc36-5187-4292-8b8b-dba2b0d163d4	7904ee02-c540-4910-857f-20ba69c7a58a	6ae44f83-e67d-4665-84ac-5c5d12cf4588	121b201f-9b07-444b-8200-950fde488744
+2334f8fc-96b3-40a0-ba60-c6af2add67fd	004493196MO333	2024-02-07 08:16:29.973497	2002-09-20	joicebernardo@gmail.com	\N	Feminino	Rua 121 - Casa 121 - Bairro Moxicano - Viana - Luanda - Angola	Joice Bernardo	334df172-ca37-4484-87f6-33c35e83e774	7904ee02-c540-4910-857f-20ba69c7a58a	6ae44f83-e67d-4665-84ac-5c5d12cf4588	9b677d4d-d1da-41b6-80f3-79b76e3686bc
+\.
+
+
+--
+-- Data for Name: telefones; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.telefones (id, numero) FROM stdin;
+66bc9b97-5f15-4828-b30e-5f8f95e3ea02	+244 934843856
+55360af5-25a9-44ef-ae55-5e29a8aee031	+244 934797552
+121b201f-9b07-444b-8200-950fde488744	+244 934762587
+9b677d4d-d1da-41b6-80f3-79b76e3686bc	+244 932762681
+\.
+
+
+--
+-- Data for Name: telefones_funcionarios; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.telefones_funcionarios (funcionario_id, telefone_id) FROM stdin;
+7904ee02-c540-4910-857f-20ba69c7a58a	66bc9b97-5f15-4828-b30e-5f8f95e3ea02
+\.
+
+
+--
+-- Data for Name: tokens; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.tokens (atualizacao, acesso, tipo, valido, funcionario_id) FROM stdin;
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDc4OTQ0NDMsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.C8JEg8oY8aYlu1HhhK1w3OcawUwqELeYo0nqhWZ7gDhEI2rJ2Q20sdcUG3uDlyrmSvGPb5MGASH-lK6qgVj7vA	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDczNzYwNDMsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.M9L1iFlCrt3ggh3fZTa5O0MrNavdaePEMwIISEAWAnE61vX4DTIzgkT2UthFR3Asuv84_mJGwMWLb9Y9skjTmQ	Bearer 	f	7904ee02-c540-4910-857f-20ba69c7a58a
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDc4OTQ2NjIsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.zX8FCg40NiH2NIMbzsdxTCuAejmy8lkjqVROCL6GUuwew59et16UC392XSVYMCzKUEnNjYpzJ3pkdK8G2LQTwQ	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDczNzYyNjIsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.inFUBebygzzJp5utdy2qjzrkVyBCRk9P68Fr5sh0KNjgkPaHsykl21rrUeAtK8wM0P2zp--b1jwKGWnE_9DcAg	Bearer 	f	7904ee02-c540-4910-857f-20ba69c7a58a
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDc4OTQ3OTksInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.EpMHL-ZUVXtTj5Od3i8ClTdLZKo36OYd0-yYrBuZjQi734dR_tfSYWOztIY3LMiNyWkiKLlbetQC9KuQZNXTxg	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDczNzYzOTksInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9._x-lYdIPGtuhGbMfY9AydRaRxTy9oSXME395jm-KjdrvpnYnV3t6_LtoJL3ern7F-UxNyJ3nYpSdv2etPUPdbA	Bearer 	f	7904ee02-c540-4910-857f-20ba69c7a58a
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDc5ODcxOTIsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.aQK2V-CIqPiBvTeOWuPNprYDm_khpGqsU-a2vEnWcgWsOsuhfwDC-H-DvlSLeVzkHZhi5NC0ShOgr_FCEx1wjA	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDc0Njg3OTIsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.ZqEdA-D6RWx58fwUqR0frytHpo_v_deQwHentd8fXJBWK-Ly28TAWifc04F7j05yvSIWSGmq0duoTa-1UHqK8Q	Bearer 	f	7904ee02-c540-4910-857f-20ba69c7a58a
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDkzOTI1MzUsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.Wje9Grsq4MLIH_ieoHr5Dks3k6DB-_8OM6ccS63kkHqlcZ9jIjWGLQOXeks4QJ-nUuDc6PNvGY9vEKe9cDWUFQ	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDg4NzQxMzUsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.cV6sSbM6ERaCWqxce-FGBMCtmYIgpG-BGevuwfCmopDlc3U5WNqckCcYmpi7qpNhZq_OvOV3jKMirJQlbzEV1g	Bearer 	f	7904ee02-c540-4910-857f-20ba69c7a58a
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDk2MDU1NDQsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.Ag9EBWe54ptUE_TZlYOVt2PD5o3M7SBk87yIs4YvOfNh2Bk7vtZbOirTfNrpVy0Mxwr1POiWgxOC3H_2kuyARQ	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OTA0ZWUwMi1jNTQwLTQ5MTAtODU3Zi0yMGJhNjljN2E1OGEiLCJleHAiOjE3MDkwODcxNDQsInBhcGVsIjoiR2VyZW50ZSBkZSBBZ8OqbmNpYSJ9.8fARtCwn18dPtX9GDHsG1bSsm0FbOAhDmLNMWdn42OpeHLMEEtvnsD7EUwSnFdYv4QT33K2riuhIsF_P_D1uOw	Bearer 	t	7904ee02-c540-4910-857f-20ba69c7a58a
+\.
+
+
+--
+-- Data for Name: transferencias_interbancarias; Type: TABLE DATA; Schema: public; Owner: bfa
+--
+
+COPY public.transferencias_interbancarias (id, data_transacao, iban_conta_destino, iban_conta_origem, montante, status) FROM stdin;
+\.
+
+
+--
+-- Name: contas contas_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.contas
+    ADD CONSTRAINT contas_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: empresas empresas_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT empresas_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: funcionarios funcionarios_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT funcionarios_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: paises paises_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.paises
+    ADD CONSTRAINT paises_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: pessoas pessoas_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT pessoas_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: telefones telefones_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.telefones
+    ADD CONSTRAINT telefones_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: tokens tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.tokens
+    ADD CONSTRAINT tokens_pkey PRIMARY KEY (atualizacao);
+
+
+--
+-- Name: transferencias_interbancarias transferencias_interbancarias_pkey; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.transferencias_interbancarias
+    ADD CONSTRAINT transferencias_interbancarias_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: telefones_funcionarios uk_49ke9jc2kcyj2jkhxlaf5tp0j; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT uk_49ke9jc2kcyj2jkhxlaf5tp0j UNIQUE (telefone_id);
+
+
+--
+-- Name: empresas uk_empresas_nome; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT uk_empresas_nome UNIQUE (nome);
+
+
+--
+-- Name: funcionarios uk_funcionarios_bilhete_identidade; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT uk_funcionarios_bilhete_identidade UNIQUE (bilhete_identidade);
+
+
+--
+-- Name: funcionarios uk_funcionarios_email; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT uk_funcionarios_email UNIQUE (email);
+
+
+--
+-- Name: empresas uk_hl3g7iymallxivwqwrqrslssv; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT uk_hl3g7iymallxivwqwrqrslssv UNIQUE (telefone_id);
+
+
+--
+-- Name: empresas uk_n7qdp6srt49w0k8gn5eknefxp; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT uk_n7qdp6srt49w0k8gn5eknefxp UNIQUE (conta_id);
+
+
+--
+-- Name: paises uk_paises_nome; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.paises
+    ADD CONSTRAINT uk_paises_nome UNIQUE (nome);
+
+
+--
+-- Name: pessoas uk_pessoas_bilhete_identidade; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT uk_pessoas_bilhete_identidade UNIQUE (bilhete_identidade);
+
+
+--
+-- Name: pessoas uk_pessoas_conta_id; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT uk_pessoas_conta_id UNIQUE (conta_id);
+
+
+--
+-- Name: pessoas uk_pessoas_email; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT uk_pessoas_email UNIQUE (email);
+
+
+--
+-- Name: pessoas uk_pessoas_telefone_id; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT uk_pessoas_telefone_id UNIQUE (telefone_id);
+
+
+--
+-- Name: telefones_funcionarios uk_telefones_funcionarios_funcionario_id_telefone_id; Type: CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT uk_telefones_funcionarios_funcionario_id_telefone_id UNIQUE (funcionario_id, telefone_id);
+
+
+--
+-- Name: idx_empresas_nome; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_empresas_nome ON public.empresas USING btree (nome);
+
+
+--
+-- Name: idx_funcionarios_bilhete_identidade; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_funcionarios_bilhete_identidade ON public.funcionarios USING btree (bilhete_identidade);
+
+
+--
+-- Name: idx_funcionarios_email; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_funcionarios_email ON public.funcionarios USING btree (email);
+
+
+--
+-- Name: idx_funcionarios_nome; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_funcionarios_nome ON public.funcionarios USING btree (nome);
+
+
+--
+-- Name: idx_pessoas_bilhete_identidade; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_pessoas_bilhete_identidade ON public.pessoas USING btree (bilhete_identidade);
+
+
+--
+-- Name: idx_pessoas_email; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_pessoas_email ON public.pessoas USING btree (email);
+
+
+--
+-- Name: idx_pessoas_nome; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_pessoas_nome ON public.pessoas USING btree (nome);
+
+
+--
+-- Name: idx_telefones_funcionarios_funcionario_id; Type: INDEX; Schema: public; Owner: bfa
+--
+
+CREATE INDEX idx_telefones_funcionarios_funcionario_id ON public.telefones_funcionarios USING btree (funcionario_id);
+
+
+--
+-- Name: empresas fk_empresas_contas; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT fk_empresas_contas FOREIGN KEY (conta_id) REFERENCES public.contas(id);
+
+
+--
+-- Name: empresas fk_empresas_funcionarios; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT fk_empresas_funcionarios FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id);
+
+
+--
+-- Name: empresas fk_empresas_telefones; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.empresas
+    ADD CONSTRAINT fk_empresas_telefones FOREIGN KEY (telefone_id) REFERENCES public.telefones(id);
+
+
+--
+-- Name: funcionarios fk_funcionarios_paises; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT fk_funcionarios_paises FOREIGN KEY (pais_id) REFERENCES public.paises(id);
+
+
+--
+-- Name: pessoas fk_pessoas_contas; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT fk_pessoas_contas FOREIGN KEY (conta_id) REFERENCES public.contas(id);
+
+
+--
+-- Name: pessoas fk_pessoas_funcionarios; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT fk_pessoas_funcionarios FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id);
+
+
+--
+-- Name: pessoas fk_pessoas_paises; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT fk_pessoas_paises FOREIGN KEY (pais_id) REFERENCES public.paises(id);
+
+
+--
+-- Name: pessoas fk_pessoas_telefones; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.pessoas
+    ADD CONSTRAINT fk_pessoas_telefones FOREIGN KEY (telefone_id) REFERENCES public.telefones(id);
+
+
+--
+-- Name: telefones_funcionarios fk_telefones_funcionarios_funcionario; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT fk_telefones_funcionarios_funcionario FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id);
+
+
+--
+-- Name: telefones_funcionarios fk_telefones_funcionarios_telefone; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT fk_telefones_funcionarios_telefone FOREIGN KEY (telefone_id) REFERENCES public.telefones(id);
+
+
+--
+-- Name: tokens fk_tokens_funcionarios; Type: FK CONSTRAINT; Schema: public; Owner: bfa
+--
+
+ALTER TABLE ONLY public.tokens
+    ADD CONSTRAINT fk_tokens_funcionarios FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id) ON DELETE CASCADE;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

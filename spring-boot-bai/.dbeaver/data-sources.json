@@ -1,0 +1,70 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18ded194e03-3ea410ee2558015a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "bai",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "bai",
+				"url": "jdbc:postgresql://localhost:5432/bai",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18dee78e6a8-5b2314d3ad45fbc7": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "baitransacao",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "baitransacao",
+				"url": "jdbc:postgresql://localhost:5432/baitransacao",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18df0c0389d-68ffa7e0fa713ccd": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "intermediario",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "intermediario",
+				"url": "jdbc:postgresql://localhost:5432/intermediario",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"postgres-jdbc-18ded194e03-3ea410ee2558015a":{"bai":{"public":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202402280202\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-18ded194e03-3ea410ee2558015a\"\u003e\u003centity id\u003d\"1\" name\u003d\"contas\" fq-name\u003d\"public.contas\" order\u003d\"0\" x\u003d\"593\" y\u003d\"43\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"empresas\" fq-name\u003d\"public.empresas\" order\u003d\"1\" x\u003d\"40\" y\u003d\"404\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"funcionarios\" fq-name\u003d\"public.funcionarios\" order\u003d\"2\" x\u003d\"594\" y\u003d\"265\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"paises\" fq-name\u003d\"public.paises\" order\u003d\"3\" x\u003d\"341\" y\u003d\"35\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"pessoas\" fq-name\u003d\"public.pessoas\" order\u003d\"4\" x\u003d\"40\" y\u003d\"40\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"telefones\" fq-name\u003d\"public.telefones\" order\u003d\"5\" x\u003d\"333\" y\u003d\"156\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"telefones_funcionarios\" fq-name\u003d\"public.telefones_funcionarios\" order\u003d\"6\" x\u003d\"306\" y\u003d\"273\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"tokens\" fq-name\u003d\"public.tokens\" order\u003d\"7\" x\u003d\"326\" y\u003d\"410\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"bai\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"fk_empresas_contas\" fq-name\u003d\"public.empresas.fk_empresas_contas\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"fk_pessoas_contas\" fq-name\u003d\"public.pessoas.fk_pessoas_contas\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"fk_empresas_funcionarios\" fq-name\u003d\"public.empresas.fk_empresas_funcionarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"fk_pessoas_funcionarios\" fq-name\u003d\"public.pessoas.fk_pessoas_funcionarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"fk_telefones_funcionarios_funcionario\" fq-name\u003d\"public.telefones_funcionarios.fk_telefones_funcionarios_funcionario\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"7\"/\u003e\u003crelation name\u003d\"fk_tokens_funcionarios\" fq-name\u003d\"public.tokens.fk_tokens_funcionarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"8\"/\u003e\u003crelation name\u003d\"fk_funcionarios_paises\" fq-name\u003d\"public.funcionarios.fk_funcionarios_paises\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"fk_pessoas_paises\" fq-name\u003d\"public.pessoas.fk_pessoas_paises\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"fk_empresas_telefones\" fq-name\u003d\"public.empresas.fk_empresas_telefones\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"fk_pessoas_telefones\" fq-name\u003d\"public.pessoas.fk_pessoas_telefones\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"fk_telefones_funcionarios_telefone\" fq-name\u003d\"public.telefones_funcionarios.fk_telefones_funcionarios_telefone\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"7\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}},"postgres-jdbc-18df0c0389d-68ffa7e0fa713ccd":{"intermediario":{"public":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202402281827\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-18df0c0389d-68ffa7e0fa713ccd\"\u003e\u003centity id\u003d\"1\" name\u003d\"depositos\" fq-name\u003d\"public.depositos\" order\u003d\"0\" x\u003d\"450\" y\u003d\"43\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"funcionarios\" fq-name\u003d\"public.funcionarios\" order\u003d\"1\" x\u003d\"267\" y\u003d\"184\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"hitoricos_bancarios\" fq-name\u003d\"public.hitoricos_bancarios\" order\u003d\"2\" x\u003d\"684\" y\u003d\"305\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"levantamentos\" fq-name\u003d\"public.levantamentos\" order\u003d\"3\" x\u003d\"457\" y\u003d\"285\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"paises\" fq-name\u003d\"public.paises\" order\u003d\"4\" x\u003d\"298\" y\u003d\"49\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"telefones\" fq-name\u003d\"public.telefones\" order\u003d\"5\" x\u003d\"52\" y\u003d\"43\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"telefones_funcionarios\" fq-name\u003d\"public.telefones_funcionarios\" order\u003d\"6\" x\u003d\"37\" y\u003d\"176\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"tokens\" fq-name\u003d\"public.tokens\" order\u003d\"7\" x\u003d\"42\" y\u003d\"306\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"9\" name\u003d\"transferencias\" fq-name\u003d\"public.transferencias\" order\u003d\"8\" x\u003d\"675\" y\u003d\"41\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"intermediario\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"fk_telefones_funcionarios_funcionario\" fq-name\u003d\"public.telefones_funcionarios.fk_telefones_funcionarios_funcionario\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"7\"/\u003e\u003crelation name\u003d\"fk_tokens_funcionarios\" fq-name\u003d\"public.tokens.fk_tokens_funcionarios\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"8\"/\u003e\u003crelation name\u003d\"fk_depositos_hitoricos_bancarios\" fq-name\u003d\"public.depositos.fk_depositos_hitoricos_bancarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"fk_levantamentos_hitoricos_bancarios\" fq-name\u003d\"public.levantamentos.fk_levantamentos_hitoricos_bancarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"4\"/\u003e\u003crelation name\u003d\"fk_transferencias_hitoricos_bancarios\" fq-name\u003d\"public.transferencias.fk_transferencias_hitoricos_bancarios\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"9\"/\u003e\u003crelation name\u003d\"fk_funcionarios_paises\" fq-name\u003d\"public.funcionarios.fk_funcionarios_paises\" type\u003d\"fk\" pk-ref\u003d\"5\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"fk_telefones_funcionarios_telefone\" fq-name\u003d\"public.telefones_funcionarios.fk_telefones_funcionarios_telefone\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"7\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}

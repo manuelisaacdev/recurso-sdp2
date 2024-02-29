@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_AeI9kNY8Ee6ab4zQ8f3pQA">
+  <modelElement href="spring-boot-bai-transacao-model.uml#_A9AD0NY8Ee6ab4zQ8f3pQA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H03TgNY8Ee6ab4zQ8f3pQA" source="_H036mdY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbWzwdY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_H03TgdY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbZ3ENY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H03TgtY8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_H03Tg9Y8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbWzwtY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_H03ThNY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_H03ThdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H03ThtY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="id" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZytgNY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_H03Th9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H03TiNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H036kNY8Ee6ab4zQ8f3pQA" source="_H036mdY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbZ3EdY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_H036kdY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_Bbc6YNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H036ktY8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_H036k9Y8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbZ3EtY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_H036lNY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_H036ldY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H036ltY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="dataTransacao" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7ptY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_H036l9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036mNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_IZJFQNY8Ee6ab4zQ8f3pQA" source="_IZMIkNY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbdhcNY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_IZK6cdY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbgkwNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_IZKTYNY8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_IZKTYdY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbdhcdY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_IZK6d9Y8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_IZK6dtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_IZK6cNY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="id" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ0ittY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_IZK6edY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZK6eNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_IZJFQdY8Ee6ab4zQ8f3pQA" source="_IZMIkNY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbgkwdY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_IZK6ddY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbjBANY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_IZK6ctY8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_IZK6c9Y8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbgkwtY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_IZK6fdY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_IZK6fNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_IZK6dNY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="dataTransacao" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w19Y8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_IZLhgNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZK6ftY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JH1-UNY8Ee6ab4zQ8f3pQA" source="_JH3zgtY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbjBAdY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_JH3MctY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbldQNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JH2lYNY8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_JH3McNY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbjBAtY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_JH3MeNY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_JH3Md9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JH3McdY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="id" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ9so9Y8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_JH3MetY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3MedY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JH1-UdY8Ee6ab4zQ8f3pQA" source="_JH3zgtY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BbldQdY8Ee6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_JH3MdtY8Ee6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbpHoNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JH3Mc9Y8Ee6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_JH3MdNY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BbmEUNY8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_JH3MftY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_JH3MfdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JH3MddY8Ee6ab4zQ8f3pQA" aggregationKind="NONE" name="dataTransacao" navigable="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6z9Y8Ee6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_JH3MgNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3Mf9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H036mdY8Ee6ab4zQ8f3pQA" name="Deposito" associationsOut="_H03TgNY8Ee6ab4zQ8f3pQA _H036kNY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_A_ohE9Y8Ee6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_H036mtY8Ee6ab4zQ8f3pQA" position="62.0,310.0"/>
+    <stereotypes xmi:id="_H036m9Y8Ee6ab4zQ8f3pQA" name="JPA1StyledElement">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_qWQNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_H036nNY8Ee6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_sygNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_H036ndY8Ee6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_H036ntY8Ee6ab4zQ8f3pQA" name="id">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZytgNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036n9Y8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZytgdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036oNY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZytgtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036odY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036otY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036o9Y8Ee6ab4zQ8f3pQA" name="UUID">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRDoQNY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H036pNY8Ee6ab4zQ8f3pQA" name="numeroOrdem">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZythtY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036pdY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUkNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036ptY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUkdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036p9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036qNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036qdY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H036qtY8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUlNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036q9Y8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUldY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036rNY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUltY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036rdY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036rtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036r9Y8Ee6ab4zQ8f3pQA" name="Double">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BW6_sdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H036sNY8Ee6ab4zQ8f3pQA" name="status">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZzUmdY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036sdY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7oNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036stY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7odY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036s9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036tNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036tdY8Ee6ab4zQ8f3pQA" name="Status">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_xD8NY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H036ttY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7ptY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036t9Y8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7p9Y8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036uNY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7qNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036udY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036utY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036u9Y8Ee6ab4zQ8f3pQA" name="LocalDateTime">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRefAdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H036vNY8Ee6ab4zQ8f3pQA" name="numeroConta">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZz7r9Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036vdY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ0isNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036vtY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ0isdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036v9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036wNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_H036wdY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H036wtY8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_rkYNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036w9Y8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_rkYtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036xNY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_sLcNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036xdY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_H036xtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_H036x9Y8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_rkYdY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_H036yNY8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_H036ydY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_sLc9Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_H036ytY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_sLddY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H036y9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_sLdtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_H036zNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_H036zdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_H036ztY8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_sLdNY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_H036z9Y8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IZMIkNY8Ee6ab4zQ8f3pQA" name="Levantamento" associationsOut="_IZJFQNY8Ee6ab4zQ8f3pQA _IZJFQdY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_A_uAoNY8Ee6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_IZMIkdY8Ee6ab4zQ8f3pQA" position="320.0,309.0"/>
+    <stereotypes xmi:id="_IZMIktY8Ee6ab4zQ8f3pQA" name="JPA1StyledElement">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_unsNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_IZMIk9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_v11NY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_IZMIlNY8Ee6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_IZMIldY8Ee6ab4zQ8f3pQA" name="id">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ0ittY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIltY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ0it9Y8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIl9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JwNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMImNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMImdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMImtY8Ee6ab4zQ8f3pQA" name="UUID">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRDoQNY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IZMIm9Y8Ee6ab4zQ8f3pQA" name="numeroOrdem">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JxNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMInNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JxdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIndY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JxtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIntY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIn9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMIoNY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IZMIodY8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JydY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIotY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1JytY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIo9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1Jy9Y8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIpNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIpdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMIptY8Ee6ab4zQ8f3pQA" name="Double">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BW6_sdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IZMIp9Y8Ee6ab4zQ8f3pQA" name="status">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w0NY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIqNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w0dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIqdY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w0tY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIqtY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIq9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMIrNY8Ee6ab4zQ8f3pQA" name="Status">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_xD8NY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IZMIrdY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w19Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIrtY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w2NY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIr9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ1w2dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIsNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIsdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMIstY8Ee6ab4zQ8f3pQA" name="LocalDateTime">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRefAdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IZMIs9Y8Ee6ab4zQ8f3pQA" name="numeroConta">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ2X4NY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMItNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ2X4dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMItdY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ2X4tY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIttY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIt9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_IZMIuNY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_IZMIudY8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_unsdY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIutY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_vOwdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIu9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_vOwtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIvNY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_IZMIvdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IZMIvtY8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_vOwNY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_IZMIv9Y8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IZMIwNY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_vOxdY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_IZMIwdY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_v10NY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IZMIwtY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_v10dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_IZMIw9Y8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_IZMIxNY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IZMIxdY8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_vOxtY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_IZMIxtY8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JH3zgtY8Ee6ab4zQ8f3pQA" name="Transferencia" associationsOut="_JH1-UNY8Ee6ab4zQ8f3pQA _JH1-UdY8Ee6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_BAHCMNY8Ee6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_JH3zg9Y8Ee6ab4zQ8f3pQA" position="568.0,310.0"/>
+    <stereotypes xmi:id="_JH3zhNY8Ee6ab4zQ8f3pQA" name="JPA1StyledElement">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BAHpQNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_JH3zhdY8Ee6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BAKskNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_JH3zhtY8Ee6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_JH3zh9Y8Ee6ab4zQ8f3pQA" name="id">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ9so9Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3ziNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ9spNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zidY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TsNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zitY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zi9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zjNY8Ee6ab4zQ8f3pQA" name="UUID">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRDoQNY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zjdY8Ee6ab4zQ8f3pQA" name="numeroOrdem">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TtNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zjtY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TtdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zj9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TttY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zkNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zkdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zktY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zk9Y8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TudY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zlNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-TutY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zldY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-Tu9Y8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zltY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zl9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zmNY8Ee6ab4zQ8f3pQA" name="Double">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BW6_sdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zmdY8Ee6ab4zQ8f3pQA" name="status">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6wNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zmtY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6wdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zm9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6wtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3znNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zndY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zntY8Ee6ab4zQ8f3pQA" name="Status">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_xD8NY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zn9Y8Ee6ab4zQ8f3pQA" name="tipoTransferencia">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6x9Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zoNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6yNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zodY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6ydY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zotY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zo9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zpNY8Ee6ab4zQ8f3pQA" name="TipoTransferencia">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_8qINY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zpdY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ-6z9Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zptY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h0NY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zp9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h0dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zqNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zqdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zqtY8Ee6ab4zQ8f3pQA" name="LocalDateTime">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BRefAdY8Ee6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zq9Y8Ee6ab4zQ8f3pQA" name="ibanContaOrigem">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h2NY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zrNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h2dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zrdY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h2tY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zrtY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zr9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zsNY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JH3zsdY8Ee6ab4zQ8f3pQA" name="ibanContaDestino">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ_h39Y8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zstY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BaAI4NY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zs9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BaAI4dY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3ztNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3ztdY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_JH3zttY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JH3zt9Y8Ee6ab4zQ8f3pQA" name="montante">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BAI3YNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zuNY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAJecNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zudY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAJecdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zutY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_JH3zu9Y8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JH3zvNY8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAI3YdY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_JH3zvdY8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_JH3zvtY8Ee6ab4zQ8f3pQA" name="dataTransacao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BAJedNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_JH3zv9Y8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAKFgdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JH3zwNY8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAKFgtY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_JH3zwdY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_JH3zwtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JH3zw9Y8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BAKFgNY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_JH3zxNY8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_KeSM0NY8Ee6ab4zQ8f3pQA" name="Status">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_A_xD8NY8Ee6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_KeSM0dY8Ee6ab4zQ8f3pQA" position="214.0,125.0"/>
+    <stereotypes xmi:id="_KeSM0tY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_xrANY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_KeSM09Y8Ee6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_3xoNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_KeSM1NY8Ee6ab4zQ8f3pQA" name="Patch">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_Ck51wNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_KeSM1dY8Ee6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_KeSM1tY8Ee6ab4zQ8f3pQA" name="descricao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ5bMNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_KeSM19Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ6CQNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_KeSM2NY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_KeSM2dY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_KeSM2tY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_KeSM29Y8Ee6ab4zQ8f3pQA" name="of" staticOperation="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_3KkNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_KeSM3NY8Ee6ab4zQ8f3pQA" name="StyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_3KktY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_KeSM3dY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_KeSM3tY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_KeSM39Y8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BSS-YNY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_KeSM4NY8Ee6ab4zQ8f3pQA" name="Status">
+          <modelElement href="spring-boot-bai-transacao-model.uml#_A_xD8NY8Ee6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_KeSM4dY8Ee6ab4zQ8f3pQA" name="descricao">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_A_3KkdY8Ee6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_KeSM4tY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_KeSM49Y8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <literals xmi:id="_KeSM5NY8Ee6ab4zQ8f3pQA" name="NEGADO">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_xrAdY8Ee6ab4zQ8f3pQA"/>
+    </literals>
+    <literals xmi:id="_KeSM5dY8Ee6ab4zQ8f3pQA" name="PROCESSO">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_xrA9Y8Ee6ab4zQ8f3pQA"/>
+    </literals>
+    <literals xmi:id="_KeSM5tY8Ee6ab4zQ8f3pQA" name="CONCLUIDO">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_ySENY8Ee6ab4zQ8f3pQA"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_LGs3sNY8Ee6ab4zQ8f3pQA" name="TipoTransferencia">
+    <modelElement href="spring-boot-bai-transacao-model.uml#_A_8qINY8Ee6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_LGs3sdY8Ee6ab4zQ8f3pQA" position="438.0,126.0"/>
+    <stereotypes xmi:id="_LGs3stY8Ee6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_9RMNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_LGs3s9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BACwwNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_LGs3tNY8Ee6ab4zQ8f3pQA" name="Patch">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_ClAjcNY8Ee6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_LGs3tdY8Ee6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_LGs3ttY8Ee6ab4zQ8f3pQA" name="descricao">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BZ9FkNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_LGs3t9Y8Ee6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BZ9soNY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_LGs3uNY8Ee6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_LGs3udY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_LGs3utY8Ee6ab4zQ8f3pQA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LGs3u9Y8Ee6ab4zQ8f3pQA" name="of" staticOperation="true">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_BABioNY8Ee6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_LGs3vNY8Ee6ab4zQ8f3pQA" name="StyledElement">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BACJsdY8Ee6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_LGs3vdY8Ee6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_LGs3vtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LGs3v9Y8Ee6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BSWBsNY8Ee6ab4zQ8f3pQA"/>
+        <type xmi:id="_LGs3wNY8Ee6ab4zQ8f3pQA" name="TipoTransferencia">
+          <modelElement href="spring-boot-bai-transacao-model.uml#_A_8qINY8Ee6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LGs3wdY8Ee6ab4zQ8f3pQA" name="descricao">
+        <modelElement href="spring-boot-bai-transacao-model.uml#_BACJsNY8Ee6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_LGs3wtY8Ee6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_LGs3w9Y8Ee6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <literals xmi:id="_LGs3xNY8Ee6ab4zQ8f3pQA" name="INTERNA">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_9RMdY8Ee6ab4zQ8f3pQA"/>
+    </literals>
+    <literals xmi:id="_LGs3xdY8Ee6ab4zQ8f3pQA" name="INTERBANCARIA">
+      <modelElement href="spring-boot-bai-transacao-model.uml#_A_9RM9Y8Ee6ab4zQ8f3pQA"/>
+    </literals>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

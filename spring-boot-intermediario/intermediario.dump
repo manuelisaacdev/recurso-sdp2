@@ -1,0 +1,765 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.1
+-- Dumped by pg_dump version 16.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: depositos; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.depositos (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    montante double precision NOT NULL,
+    numero_conta character varying(255) NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL,
+    historico_bancario_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.depositos OWNER TO intermediario;
+
+--
+-- Name: funcionarios; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.funcionarios (
+    id uuid NOT NULL,
+    bilhete_identidade character varying(255) NOT NULL,
+    data_criacao timestamp(6) without time zone NOT NULL,
+    data_nascimento date NOT NULL,
+    email character varying(255) NOT NULL,
+    foto_perfil character varying(255),
+    genero character varying(255) NOT NULL,
+    morada character varying(255) NOT NULL,
+    nome character varying(255) NOT NULL,
+    senha character varying(255) NOT NULL,
+    pais_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.funcionarios OWNER TO intermediario;
+
+--
+-- Name: hitoricos_bancarios; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.hitoricos_bancarios (
+    id uuid NOT NULL,
+    data_resposta timestamp(6) without time zone,
+    data_solicitacao timestamp(6) without time zone NOT NULL,
+    iban character varying(255) NOT NULL,
+    status smallint NOT NULL,
+    CONSTRAINT hitoricos_bancarios_status_check CHECK (((status >= 0) AND (status <= 2)))
+);
+
+
+ALTER TABLE public.hitoricos_bancarios OWNER TO intermediario;
+
+--
+-- Name: levantamentos; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.levantamentos (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    montante double precision NOT NULL,
+    numero_conta character varying(255) NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL,
+    historico_bancario_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.levantamentos OWNER TO intermediario;
+
+--
+-- Name: paises; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.paises (
+    id uuid NOT NULL,
+    nome character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.paises OWNER TO intermediario;
+
+--
+-- Name: telefones; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.telefones (
+    id uuid NOT NULL,
+    numero character varying(15) NOT NULL
+);
+
+
+ALTER TABLE public.telefones OWNER TO intermediario;
+
+--
+-- Name: telefones_funcionarios; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.telefones_funcionarios (
+    funcionario_id uuid NOT NULL,
+    telefone_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.telefones_funcionarios OWNER TO intermediario;
+
+--
+-- Name: tokens; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.tokens (
+    atualizacao text NOT NULL,
+    acesso text NOT NULL,
+    tipo character varying(255) NOT NULL,
+    valido boolean DEFAULT true NOT NULL,
+    funcionario_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.tokens OWNER TO intermediario;
+
+--
+-- Name: transferencias; Type: TABLE; Schema: public; Owner: intermediario
+--
+
+CREATE TABLE public.transferencias (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    iban_conta_destino character varying(255) NOT NULL,
+    iban_conta_origem character varying(255) NOT NULL,
+    montante double precision NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL,
+    tipo_transferencia character varying(255) NOT NULL,
+    historico_bancario_id uuid NOT NULL
+);
+
+
+ALTER TABLE public.transferencias OWNER TO intermediario;
+
+--
+-- Data for Name: depositos; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.depositos (id, data_transacao, montante, numero_conta, numero_ordem, status, historico_bancario_id) FROM stdin;
+188314c5-00b8-4db4-9479-789c4b6f8c96	2024-02-27 04:37:32.26814	100	8175620309964053	000400000728758934981586	Conluido	efb497fe-f272-4f38-bf9b-a890011b1355
+e803c182-ed90-4212-abc3-dee5b6fd62c8	2024-02-27 04:36:36.624075	10000	0090175075753453	000600008680965860652786	Conluido	83c49105-2945-43a1-b9ae-8cd16a510132
+d3577a13-f2f0-460b-9164-796188f1799c	2024-02-26 04:56:50.626871	100	0090175075753453	000600001932107853051834	Conluido	83c49105-2945-43a1-b9ae-8cd16a510132
+\.
+
+
+--
+-- Data for Name: funcionarios; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.funcionarios (id, bilhete_identidade, data_criacao, data_nascimento, email, foto_perfil, genero, morada, nome, senha, pais_id) FROM stdin;
+bf5f6fae-a9ea-429d-9fba-783f25363e5d	005977492MO044	2024-02-08 09:36:22.898113	1998-06-22	manuelisaacialberto@gmail.com	ec983a74-f747-4d83-b23f-a7822b194ee1-1707381382869.jpg	Masculino	Rua 121 - Casa 121 - Bairro Moxicano - Viana - Luanda - Angola	Manuel Isaac	$2a$10$ZUuhaFB2hQz3/K2/eyFugOydshdzflr2S/l9u9Z6.G092FgUi7Km.	0ab33447-a08c-49e0-ae4d-1685b12f38b4
+\.
+
+
+--
+-- Data for Name: hitoricos_bancarios; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.hitoricos_bancarios (id, data_resposta, data_solicitacao, iban, status) FROM stdin;
+c3bad24c-fa48-4b89-b89c-0cd8ff0bce5e	\N	2024-02-26 04:42:35.15665	AO02000600005845547816696739	1
+4b7efa09-b939-4167-aef4-a9e9a1dceee7	\N	2024-02-26 04:42:35.237063	AO02000600005845547816696739	1
+d3fc384b-24c9-4dc9-8697-973d8a7283c4	\N	2024-02-26 04:43:52.768382	AO02000600005845547816696739	1
+fcff574f-af03-4688-89c2-ad205927c814	\N	2024-02-26 04:45:15.911163	AO02000600005845547816696739	1
+9d2280ca-58e3-4e72-a364-7f42a9184bf4	2024-02-26 04:47:37.479634	2024-02-26 04:47:32.331873	AO02000600005845547816696739	1
+8204fdfd-ed03-4112-adf3-46b9431bd894	\N	2024-02-26 04:49:26.424044	AO02000600000090175075753453	1
+c5289ef1-2996-41f7-9c03-a6a76b168560	\N	2024-02-26 04:50:15.876676	AO02000600000090175075753453	1
+c975c6bc-fb22-4182-9615-1dde19b2e32d	\N	2024-02-26 04:53:43.275791	AO02000600000090175075753453	1
+bb7d2ecf-0ff4-41b8-9cd2-5a6219870384	2024-02-26 04:56:50.613708	2024-02-26 04:56:45.449331	AO02000600000090175075753453	2
+724d8e87-4099-4da5-bc5b-1b0a49d8ee1b	2024-02-26 04:58:58.426966	2024-02-26 04:58:53.317964	AO02000600000090175075753453	2
+14a837da-93a0-44bc-a8dc-75c884a9157a	2024-02-26 05:03:19.84038	2024-02-26 05:03:14.702744	AO02000600000090175075753453	2
+b5cb4756-d915-4eac-83ec-41dafc4409a4	2024-02-26 05:03:42.012812	2024-02-26 05:03:36.926334	AO02000600006208185414257284	2
+696e44d2-9a42-4f4b-8f02-06ea9044fa43	2024-02-26 05:10:44.885677	2024-02-26 05:10:43.984191	AO02000400001967993991403225	2
+d870e443-9f24-43b7-b370-2c6f87643bca	2024-02-26 05:11:49.847089	2024-02-26 05:11:44.192641	AO02000600006208185414257284	2
+a9c98608-220d-4a5c-b348-0a0719a48a33	\N	2024-02-27 04:31:34.051678	AO02000600000090175075753453	1
+dab8e8c1-c306-415f-a4c1-86c5b7577f22	\N	2024-02-27 04:32:13.544419	AO02000600000090175075753453	1
+e4f13404-aa4a-4068-a3a4-ed6fd28940ec	2024-02-27 04:36:36.585944	2024-02-27 04:36:36.275562	AO02000600000090175075753453	2
+2499db48-0383-4125-8205-a3cec6785a25	2024-02-27 04:42:53.496557	2024-02-27 04:42:48.855209	AO02000400008175620309964053	2
+ece5aacc-b9e6-43bb-81ab-a70e66fcd6b8	2024-02-27 04:37:36.855998	2024-02-27 04:37:31.969041	AO02000400008175620309964053	2
+340166a7-97f3-4f6f-9cbc-b1fc89a65d8a	2024-02-27 04:45:08.237788	2024-02-27 04:45:03.49634	AO02000400008175620309964053	2
+175ab1d3-f99d-4eae-9894-55e7e4894eda	2024-02-27 04:38:16.099409	2024-02-27 04:38:11.461519	AO02000400008175620309964053	2
+9d47c4c4-ec3b-4d46-a03a-511ad94ba062	2024-02-27 04:39:00.795976	2024-02-27 04:39:00.732798	AO02000600000090175075753453	2
+4d267975-06b8-4676-96c1-07908f44332e	2024-02-27 04:39:30.963551	2024-02-27 04:39:30.924104	AO02000600006208185414257284	2
+f79006ce-d481-49f9-a46e-dfd383417b05	2024-02-27 04:39:55.338619	2024-02-27 04:39:55.302652	AO02000600005845547816696739	2
+601dad03-2407-44e6-937a-2b8076d4f19e	2024-02-27 04:40:28.231882	2024-02-27 04:40:28.197325	AO02000400001967993991403225	2
+e16ba068-f625-4e91-8911-9f4d360c1049	2024-02-27 04:40:55.546174	2024-02-27 04:40:55.513282	AO02000400001967993991403225	2
+efb497fe-f272-4f38-bf9b-a890011b1355	2024-02-27 04:54:14.964415	2024-02-27 04:54:14.723867	AO02000400008175620309964053	2
+83c49105-2945-43a1-b9ae-8cd16a510132	2024-02-27 04:55:25.905752	2024-02-27 04:55:25.651678	AO02000600000090175075753453	2
+56f07baf-f1b8-4e37-9361-beb6224f2037	2024-02-27 04:41:33.761549	2024-02-27 04:41:29.105744	AO02000400008175620309964053	2
+6e700cdf-2f75-4d34-a30f-882e0256e019	2024-02-27 04:42:09.306928	2024-02-27 04:42:04.628796	AO02000400008175620309964053	2
+\.
+
+
+--
+-- Data for Name: levantamentos; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.levantamentos (id, data_transacao, montante, numero_conta, numero_ordem, status, historico_bancario_id) FROM stdin;
+44c243a4-7460-4d17-a935-6c07845c4739	2024-02-26 04:56:50.644417	1000	0090175075753453	000600002361128677208085	Conluido	83c49105-2945-43a1-b9ae-8cd16a510132
+\.
+
+
+--
+-- Data for Name: paises; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.paises (id, nome) FROM stdin;
+d0784304-ca81-4891-8c56-78d029836a7f	Andorra
+cc50b17b-1540-4397-b513-7a7202e22670	Emirados Árabes Unidos
+d01ef1a2-6773-4326-b30e-fd484f635647	Afeganistão
+ce0bf3b9-903c-487f-a87e-7dc203f51547	Antígua e Barbuda
+d156399e-b025-42c1-8b88-beb2f4628a1a	Anguila
+3922f697-8f47-464f-8542-57ea0c1940eb	Albânia
+29aa3e2e-8717-4331-a58f-cd7738f42f26	Armênia
+0ab33447-a08c-49e0-ae4d-1685b12f38b4	Angola
+39a6b0ce-1b92-4b5c-a087-64fdb5a7a74b	Antártica
+0bd49d84-353c-4ad8-a478-e1905566e086	Argentina
+f0314917-8c7c-43f6-ac08-2431630facb0	Samoa Americana
+7605b464-41ef-46a7-8fc0-1bcc65f3c33c	Áustria
+5eb84e17-6ca9-426e-ba11-98f1de5340d8	Austrália
+a50da00b-f74a-481f-b8fc-1ef901197f96	Aruba
+e00cd4d4-854b-4543-916c-d5a14af1f7b6	Ilhas Alland
+a27eaa5b-f9b6-4a99-bdaf-4c6057da81e9	Azerbaijão
+28bb1c33-7f8a-42ed-a9bd-596c6c6e5793	Bósnia e Herzegovina
+afb7cf51-60af-4ecd-ab13-4eca38674f65	Barbados
+455fa4e6-87c1-4595-8342-12b8edf15367	Bangladesh
+b95de04b-abfd-4a26-8e05-e5519a911274	Bélgica
+7d242568-1d19-43dd-90d4-c9b000138ad2	Burkina Faso
+9d147a35-3fb8-4c54-8129-32b304508a13	Bulgária
+96be4a5c-8532-4e38-87fe-ab9de346ef4d	Bahrein
+2501c34f-9c81-4390-8d5d-16a65dd68984	Burundi
+40fe581c-bee1-49ca-9ecc-448a07794bb6	Benin
+e1d5dc8a-b493-4f55-a46a-c6120c5f7288	São Bartolomeu
+be5a39bc-2234-4db0-82d1-1e4ac1afa314	Bermudas
+171163a5-1332-4a60-8aed-e5eb9f5aaa68	Brunei Darussalam
+f5b32f3a-a913-4fc4-ac61-6a7bab09d513	Bolívia
+3fe6aa7b-d15e-4e46-b334-16e7062d68f2	Brasil
+893f300c-1062-49a4-ab0a-ac3ec5249610	Bahamas
+86bfad1d-60c9-467c-9193-e6954868510a	Butão
+a173f28a-5576-48fa-b1fd-352b7d3878a4	Ilha Bouvet
+ace0d549-3703-4da1-b300-7f0518434988	Botsuana
+345a6350-bc0c-4e12-9048-e86c6a1109a1	Bielorrússia
+a8c7e227-15ba-45bb-80c8-703fcffc1d4f	Belize
+25af18c8-bd77-448f-a2ae-00052a4662ff	Canadá
+08d852d4-5f62-4609-97cd-5854f5f2dbf6	Ilhas Cocos (Keeling)
+a6855af3-4a72-43f7-bcae-49499bc25193	Congo, República Democrática do
+023b4047-824c-453b-b229-bc411d906adc	República Centro-Africana
+f2dc1d5f-b854-4687-a88e-9fe486ed9feb	Congo, República do
+fa9a9bd3-4511-4197-aa01-67a756d019d9	Suíça
+47e0c432-f48e-4a94-9118-e5f19c6a7cef	Costa do Marfim
+2d0cc3fc-9919-4730-ab43-1ba9cefc3397	Ilhas Cook
+270e93fb-8cf3-4942-9c82-eb6112b6ebc0	Chile
+15b2df7c-04d9-4671-8cae-8e433fe2c0fe	Camarões
+63c6e2ff-3068-4699-ba3b-c5ed8881f396	China
+c8786636-52cb-4592-b7ca-3b7c413ce23e	Colômbia
+c84798de-7a9a-4ffd-808c-ce88ed75c3b7	Costa Rica
+aff69f6b-a2dd-4580-93aa-45eb2e69b011	Cuba
+0bfd6dfc-75ee-454a-b4a6-9ed68c840812	Cabo Verde
+6e922913-46c6-479b-ba69-dd7cd41a416d	Curacao
+08121ba0-a3d6-4c64-8c25-f4496e5745f1	Ilha de Natal
+d8daffdf-9fa9-49e3-a8a0-383b84f853fc	Chipre
+90c37b6e-9b6f-4b6b-a65d-faab59f3770c	República Tcheca
+2525a87f-f7ac-43b4-9fc9-9f17d75c36d6	Alemanha
+fde215fd-8913-48c2-a19c-fcf100e580cf	Djibuti
+24dc99fe-8be9-4e3a-b50b-06d34c1aab2f	Dinamarca
+3fc60147-6181-4f97-8b0b-b9a792fb76a9	Dominica
+018bff9f-4af2-4677-ab75-0695d7891412	República Dominicana
+fe58fb2d-13a8-4bd5-8ce2-a398d5e6d76f	Argélia
+64d03de7-16de-44f0-8b48-d08f68abaedc	Equador
+4888f969-50c3-4a00-b125-31511db8594c	Estônia
+c5f63d11-d6ce-45ff-b6fb-703f9c2d48e6	Egito
+5fba93c0-8997-4306-8405-b89964343438	Saara Ocidental
+004a4594-ad3c-47a1-9255-4cffbd266f35	Eritreia
+3abe5bd9-1bcb-4552-9df4-ab3e4452c58b	Espanha
+64edcafc-1996-41a3-ab08-c5acb6c53e74	Etiópia
+51d67d3b-049e-4f2d-82f3-1eae43b16770	Finlândia
+0389092e-1305-47ae-ace3-e78d86e76c6d	Fiji
+42fbc427-0f15-4ffb-b1d5-dac6f9db09b4	Ilhas Falkland (Malvinas)
+5391f175-9f8f-4db5-b1fc-e0a801faea6c	Micronésia, Estados Federados de
+b45cb862-3787-472b-8e22-930bb0575165	Ilhas Faroé
+e5277329-738d-4eb7-aa75-07c588762807	França
+0687e972-f87f-44c5-8cb9-42ba3658ccad	Gabão
+0367611c-8aaf-45ab-afd0-dd60a66d49c1	Reino Unido
+c24dba32-8c2a-4e0f-a34f-181280fb8ebf	Grenada
+0d863210-bf01-4028-8df9-737361821c61	Geórgia
+3a6690f4-5114-4303-8203-0d431cbd6c3b	Guiana Francesa
+a4cdf592-250b-4980-a65a-89cc0b36eeb1	Guernsey
+95c7539c-ed76-4c0e-bdcc-b3234528c417	Gana
+706e624a-3cb9-4cfc-b001-9d4d8694f99e	Gibraltar
+814697e6-3a39-43bf-89c9-4253929d6759	Groenlândia
+fadb59eb-feb7-4482-a39b-ef5783eb84aa	Gâmbia
+26f83de9-95ee-42c6-bf2b-f91de1c414eb	Guiné
+3eb3c1fa-2b70-4ce8-8bcd-ebf33724d980	Guadalupe
+5da4a2d4-0b82-48d4-b395-53bdfef0cb79	Guiné Equatorial
+51d6a901-3628-4769-b31f-f397d873f012	Grécia
+306a8461-50fb-4a57-97bb-821110fdf666	Geórgia do Sul e Ilhas Sandwich do Sul
+12213171-d672-452c-92ff-6a9f800f9c57	Guatemala
+88b7520a-6651-4739-b230-822aee1e6eaa	Guam
+eb6143f0-50b0-4cb5-aed3-6e035ab590bf	Guiné-Bissau
+1f2a2080-3d35-47f3-a76b-850d2aed2be6	Guiana
+5afc0d42-24a7-4a92-a017-69ff1ee644e0	Hong Kong
+becbee72-e764-4dfe-9cd6-0bd63ea81885	Ilha Heard e Ilhas McDonald
+cd2c917f-7394-4244-bc31-71817a8cc7e8	Honduras
+c0bfedbd-ef82-417e-bf47-390ac992a4dd	Croácia
+b3ccf67f-4d82-4b27-9916-fbb4677865a5	Haiti
+cd662b81-03ae-41ed-8cdd-8e28c0978d85	Hungria
+c9fa3962-c984-4abd-91c4-052c0cc030f1	Indonésia
+84fa7ec2-d0e3-4246-9a43-425284d91765	Irlanda
+b55a4afd-c8a5-4351-a824-16effca639ec	Israel
+2e7f2e08-6cd4-4573-b7cc-9d6a882a5738	Ilha de Man
+81c9e44c-83cc-4a41-9606-8cff43bdc5f0	Índia
+d3b86450-d8c9-42e2-944e-8caa967915bb	Território Britânico do Oceano Índico
+a5f801ad-8c0b-4e68-9325-353f0bb005fe	Iraque
+0e4759ff-5098-4f58-a6c0-8ae253b2ff95	Irã, República Islâmica do
+f0081df8-ce16-433a-a77b-2c33a100163b	Islândia
+2a8e9b58-1a87-4281-b542-8232b92d94e4	Itália
+e9f9376f-971a-461f-b66e-1283a2b5d527	Jersey
+c6cae2ec-fd26-4e3a-8386-17e5156a3e74	Jamaica
+8d593484-9ce9-4271-8810-f6a8196288a4	Jordan
+58bb3c68-816b-4b9e-8344-65bb13df8bec	Japão
+5e327fd8-a90a-4d31-ac25-b2fc3b31603a	Quênia
+141924e0-5983-45d7-9923-86cfdcdaaaeb	Quirguistão
+26a71c9a-7f3e-4ac2-a308-2f29ec55898a	Camboja
+d95b5034-a039-42ec-8075-74da9badd5dc	Kiribati
+291800f8-a18c-41db-9814-e3c6fb11ff4a	Comores
+eaa8b54a-2c40-41a8-8b1d-af9d87763a2e	São Cristóvão e Nevis
+a5441657-e813-4163-aa19-23706303e67c	Coreia, República Popular Democrática da
+973d5619-c77f-4c4d-80db-7de54bd35be2	Coréia, República da
+ef341904-1b5f-4caf-b4e3-80a80994f3d3	Kuwait
+b78e0daf-de4b-4f6f-b078-b85eff19593f	Ilhas Cayman
+7a33bdc6-861c-45db-aefe-49e1ab339b96	Cazaquistão
+47837e18-e48e-492e-a835-fc4198b47b36	República Democrática Popular do Laos
+5860ebf4-c2c3-41eb-9576-1ecb52d1a3a7	Líbano
+5920fa10-4562-4b93-9f3b-0a3dfab47fd2	Santa Lúcia
+6df98695-7ec4-4f30-a048-db3e95c06250	Liechtenstein
+0e9329da-a62a-4271-81ac-99f56c15c1c5	Sri Lanka
+244fb08e-4686-467a-939e-2363a8693cd1	Libéria
+48977c5e-674a-40da-b4da-cb44e24de3b7	Lesoto
+6d83e508-4e51-4efd-9cfb-5e16a35cd2eb	Lituânia
+cab8eda5-2323-478b-9251-2276a0131788	Luxemburgo
+108c5da6-8b27-43b8-a7c5-6fc5f9c42f9c	Letônia
+5d2a2797-18ee-40ee-83f7-d6421465369b	Líbia
+55591afa-b10d-441b-b342-6417d77a3619	Marrocos
+e606b4cf-e264-4d50-a592-a8e03ba4f8a5	Mônaco
+4e7273a5-a161-48cb-b203-09d8ebd9b92c	Moldávia, República da
+cda3483e-4b5d-4e45-826c-01178d0ef05b	Montenegro
+96919cfe-fc13-4e57-b4a5-b93f2d25908c	Saint Martin (parte francesa)
+581f0aaa-965a-4c06-8c47-dbe4e4d26ad8	Madagascar
+7fe4706c-e8b3-472a-9f78-c572d836bc46	Ilhas Marshall
+618a5600-c2a7-48f9-9f3c-e226ad954913	Macedônia, Antiga República Iugoslava da
+f1cd5c41-703a-4746-91df-047f5b5191e4	Mali
+f1d4a95d-5ac2-4b5c-b519-3114861c3f87	Mianmar
+3848663c-f715-4c66-823b-badd93c565db	Mongólia
+564f3cd5-210c-492f-a240-f3ce7a788369	Macau
+85593ceb-cf69-4491-9549-4ad056684795	Ilhas Marianas do Norte
+3c6f8d9d-89c3-49c0-ab95-1aae53d35e07	Martinica
+94b31ecc-600e-4f21-946b-130f7fd0f444	Mauritânia
+c29fda32-16d0-4d60-a357-fcc912a73e72	Montserrat
+af973d88-f6bd-447f-9369-24de54802254	Malta
+0ee40d5b-adf8-4fdd-90e9-da5ebd9d652c	Maurício
+1eee0b72-0ed4-4959-9f75-e166bdf334fa	Maldivas
+80f355e3-67e8-4c34-a645-b49a2d2f0e2d	Malauí
+94c5c084-bb89-4108-8b6a-b724824b480a	México
+8e1ba0e8-665d-44a8-86ca-dabe801fd1bd	Malásia
+4410a67b-ad1f-4b6a-a377-c787ae376cff	Moçambique
+07d8ebfe-1d22-458b-8043-05bf4d84ce17	Namíbia
+751f8e8f-470a-4b5e-9888-1f2c86b4e20e	Nova Caledônia
+4c83ba9e-7152-428c-8c32-e1e1bc4364bf	Níger
+1170c4c0-6878-4d83-890c-711a32cfbd2d	Ilha Norfolk
+eba66603-0da8-4730-a9b0-109222d80f0b	Nigéria
+6dacd452-fa52-46ee-a2b0-2d2f18c0ad5e	Nicarágua
+4b6ff52c-609b-46bd-a48b-e795f51b8594	Holanda
+b1cb8c93-fa6f-4668-95bc-6c622aa2213a	Noruega
+9b0ba59b-6111-4cd6-b32d-ebd28f1c600d	Nepal
+8a6d926d-86c9-4d93-95c0-19ac70858ac7	Nauru
+e04fe66c-d007-4377-bd7f-4d326c0a8d9e	Niue
+2ac66901-6195-462d-b3b6-9ded9b45bfcf	Nova Zelândia
+6d20e039-a547-4f4c-a3d2-38649edd0ee5	Omã
+675b6ed4-c258-49fa-a223-fedec3a6162c	Panamá
+7fa23fa9-a011-41a1-b868-ee877a5ddc7d	Peru
+a1f2739c-2799-4bb6-aea9-1a3e2db5c208	Polinésia Francesa
+4164a625-00ed-4604-bacb-b08b99e6b429	Papua Nova Guiné
+b72d3694-829d-4ee4-a3c7-2c5958a667ea	Filipinas
+6173f11b-cb5a-4076-b83d-be753134fb87	Paquistão
+f357298d-3035-4f1a-9142-6983c7cddde9	Polônia
+6315e991-2cca-43ef-ae29-4b091cf35a60	São Pedro e Miquelon
+5075fa90-7185-41cc-bcff-80381f0c8737	Pitcairn
+b3f82130-1943-45d6-84ed-e99ea5f23d65	Porto Rico
+8383f322-c0a2-4b58-9159-9e119408cff7	Palestina, Estado de
+d1da59b6-2915-4ce4-978e-8ac8f20617d7	Portugal
+a48c4b42-8f54-4c43-b902-f663a2d9441a	Palau
+2d25142a-b74b-41ca-8ccb-6d131b1608d5	Paraguai
+b396a3c4-f318-408e-bcb3-9fd315720a94	Qatar
+7ea4bddc-3fa8-4030-bb2c-0d8973b74456	Reunião
+5a634581-93d3-45af-9061-10bb91b61dc4	Romênia
+60c4c3d3-18f2-4a16-9542-a48133b9e50c	Sérvia
+1ec3da62-9b6f-4495-a3b0-3b2afc8f5e40	Federação Russa
+9bdae6ce-f263-4db2-9842-951a715e3e20	Ruanda
+778acefc-6505-405f-9d44-977201643f05	Arábia Saudita
+bf721935-30a8-409f-a7ce-9486dde7c65f	Ilhas Salomão
+9cc80af9-5c2b-444e-88ce-fd692d2f93a5	Seychelles
+f155efea-f42c-4000-9be3-03790bb9b79e	Sudão
+2fe09b00-580d-4de7-b712-58bbfb9037d1	Suécia
+b8247978-5db7-4778-847b-9ed1b2d3be94	Cingapura
+156d4a1d-dcfc-44dc-8579-c3ae04c81271	Santa Helena
+2a579eaf-674e-4950-a915-386a89080579	Eslovênia
+0946cce9-4701-4eb9-81e7-4b693f661e84	Svalbard e Jan Mayen
+beaf8bf9-ea1b-4fc0-9664-02cfff9ef1bc	Eslováquia
+01019cb8-4b56-42cf-a92d-f540cfd80c63	Serra Leoa
+dafc4ba2-564b-4dd4-a732-4dfc151196ec	San Marino
+d7a27ad8-4fd4-4486-b8a1-c07a03de7305	Senegal
+889af1d5-82c7-4df0-bbb6-197e91ad7b65	Somália
+dbb7ef20-346e-4e4b-951e-ffaac806a746	Suriname
+c8d74468-e140-481b-8b2f-d41b5dc822ac	Sudão do Sul
+01b7239b-0dfc-420c-a3ac-8eff722d179b	São Tomé e Príncipe
+2272356f-7463-467f-a445-407f4a9ed286	El Salvador
+8b6393ad-d699-4af2-8812-4a446238d09b	Sint Maarten (parte holandesa)
+58c30a00-b333-4e5c-899f-dc2f3276b2dc	República Árabe Síria
+4b57666d-c769-45ef-b471-0bfc341206fe	Suazilândia
+ffdeba41-bbe7-4d33-a058-9647daf7ba28	Ilhas Turcas e Caicos
+969dfc7b-98d9-4ffc-adc2-29c7d91fce5b	Chade
+4241457d-44f2-4fac-99d3-33a6e048998e	Territórios Franceses do Sul
+7ee3ede0-b3c8-4999-bcaf-5e6cda84f248	Togo
+df5cd219-2530-4ca9-b29b-7f63be2a6291	Tailândia
+cc3badfc-fa0a-4c0d-95d9-6541cb8f0044	Tajiquistão
+d76ec56c-c496-4058-9f3d-2da8f55ce791	Tokelau
+c2e266ad-f41f-42f1-8b94-cf733950be8c	Timor-Leste
+c19e9905-df1c-40b9-aecc-5ce4ea0710bc	Turquemenistão
+1f29878e-38bd-45b6-85f5-5e6dcc144e63	Tunísia
+5d800c30-2219-4ab9-b0af-157fc095cca4	Tonga
+a24c6144-4e84-4b60-a916-2975cdbd3d8b	Turquia
+35e2f065-7273-4edf-815d-7d3062703a96	Trinidad e Tobago
+998ac0c4-351d-46b3-a1c6-a80231149aa2	Tuvalu
+eba54338-3a75-410e-bcde-d505f7836cca	Taiwan, República da China
+20249794-9223-4960-b658-d43452f6d2a6	República Unida da Tanzânia
+5c8a2a58-1cc6-41cd-a5fb-4551a6b39fb7	Ucrânia
+89149d46-89d4-40b4-940d-79a7a02f0287	Uganda
+2831e679-35da-495e-830c-ec1132da62db	Estados Unidos
+2747272c-60d8-4947-b21f-c6da6f6a2fec	Uruguai
+cc1523f5-fd12-40e8-b69c-c97b4bc5e552	Uzbequistão
+2033c0cc-6f62-4a93-bdaf-ad192f2cb853	Santa Sé (Estado da Cidade do Vaticano)
+f23c949f-406f-4a1d-b5d9-b4e0f0f9746e	São Vicente e Granadinas
+a48915d9-e258-4889-bf6a-29c5bd85da17	Venezuela
+cfab410f-d5d8-45ea-a379-f88c7924b41c	Ilhas Virgens Britânicas
+a36fa36f-450d-43ff-94e5-c368db706b5c	Ilhas Virgens Americanas
+59bd484e-7cc0-4455-ad75-a1216a2f411e	Vietnã
+64763994-1f11-4179-922c-81836ab32dca	Vanuatu
+78fb1a5e-f352-4b8d-831f-c1e095cbb138	Wallis e Futuna
+6afcdede-c3e4-4702-b473-340b1ac9ebbc	Samoa
+a8f38c39-f319-47ef-beca-885326146d5c	Kosovo
+9136181a-8bfb-40e4-9892-380a0a6e206f	Iêmen
+0bafbd33-cd1c-4222-a3db-f5788dcd8bf5	Mayotte
+0efb4906-2409-43c1-ab07-42c467176446	África do Sul
+e4446f53-89c7-45b9-9dcf-908a1a188f6f	Zâmbia
+7e095b3b-ce23-402a-9fec-4848a2b9360b	Zimbábue
+\.
+
+
+--
+-- Data for Name: telefones; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.telefones (id, numero) FROM stdin;
+d73dc737-f2c9-4eb4-890f-935a6cf4c91d	+244 945843891
+\.
+
+
+--
+-- Data for Name: telefones_funcionarios; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.telefones_funcionarios (funcionario_id, telefone_id) FROM stdin;
+bf5f6fae-a9ea-429d-9fba-783f25363e5d	d73dc737-f2c9-4eb4-890f-935a6cf4c91d
+\.
+
+
+--
+-- Data for Name: tokens; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.tokens (atualizacao, acesso, tipo, valido, funcionario_id) FROM stdin;
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDc5ODYzNTJ9.uUKvge8yZYxTBp-xpnLiGOe7WSjPiSTAYCH7NGJ0i_ttXoyed4I-2g_GGAlN-Kgi-6ir2xhxfH74FJfiFaGAuA	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDc0Njc5NTJ9.kDV9EcKj-cp2YL1UAtldk5iMit5omdvL2wxKyG0jHXijjv1E-cPv3IMOsUgMTchgOGfvlkC3F5ybXomLWNUFnw	Bearer 	f	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDgxMDU3Nzh9.6s9OOPHFpCGjEOWMGyIuV3Qdnf8WVI2FBzFYCfk0ABxFBf9fFbv2d7h86Max11aNMC6HMpWylFLdqbatGJg5PQ	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDc1ODczNzh9.JFChBSVGZufedfQesCXa6S_9h6ArxPatRaEpc2rxgqmF0pdJgHGyBaLLRifLBq0rlfbCGZwnyq25rylG_lRwIA	Bearer 	f	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDgzMDA5OTB9.sVQo7z5ofDw-3rqLYmBvNUiWrXUHtCydiKuoLAYVMRkqbYSGHXIh4mrvUZrAGIB5rUgWaItrHMNIMBOaKndPqw	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDc3ODI1OTB9.Ivv4CuHNiU3cVkMZCy3xXoixVLxciOhX0LVBgRzbwhdPBoKd-R6FVeQwzFnIhq8XQGmQLYop77r6PQFv8bw_tQ	Bearer 	f	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDkzOTE1OTV9.ES1TN9Rig-SJvemR98TdTCsNJE7hKk7qJHkndki451gCVkh9J3w75VpL1YKx879J3mzASk6Esm0c-mK9P8D4nQ	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDg4NzMxOTV9.jPnMppq8QEj4EEi8HriwKYRsFz1ofhsHIlcqflau5w3-tLZCFddz_dHQONmbqeEqWBX5znUlpZ5PyHlt0Kb9IA	Bearer 	f	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDk1MTY4MTR9.4V3AU15zrL2tMY4zp69qdXc6j3CaS__iCG4rBbuNH_yC2PejiHrlxAiiAvVEGA7fhhq5Ta8hENn89DqgXmEEiw	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDg5OTg0MTR9.Xb91kyAFd5G7LcK6uFCGOxfnjIHPAvdemAwAEj4uUH7nQIWOmb8wlKr6A5U1YNGxycgHwDDEqk13R3hTu6YLQQ	Bearer 	f	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDk2MDU2MTl9.zksNxDKZPQ7dVa9YxsFHMtHipZq4qgrVXp9qUh-XsrUdz9uymt7JqBye5APjNmkwk_HPPmpjq8aa9xXy1hoOXw	eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZjVmNmZhZS1hOWVhLTQyOWQtOWZiYS03ODNmMjUzNjNlNWQiLCJleHAiOjE3MDkwODcyMTl9._JD1DNEqo_6nNu0xGvEain-hTTkCii31Em60AkEi0kdDNA6QQR6PPIWMVFIcBYWvkys34sqdCDuTg1KFjz5VkQ	Bearer 	t	bf5f6fae-a9ea-429d-9fba-783f25363e5d
+\.
+
+
+--
+-- Data for Name: transferencias; Type: TABLE DATA; Schema: public; Owner: intermediario
+--
+
+COPY public.transferencias (id, data_transacao, iban_conta_destino, iban_conta_origem, montante, numero_ordem, status, tipo_transferencia, historico_bancario_id) FROM stdin;
+7e1afd19-205e-448b-82e3-4761e0b7dcb4	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	100	000600009268682411236887	Negado	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+0ad62f10-0731-4807-b811-ddbb35ee5c9c	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	140	000600009058489030748341	Conluido	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+71635b4d-3953-46ef-8f94-e244cb8b3713	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	60	000600008603061711875613	Processo	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+0b6934c8-24d0-45dc-8a27-537a22188996	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	100	000600001132243256291094	Processo	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+402892a1-0332-4552-a204-13b9f638be4b	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	50	000600009077187827855058	Processo	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+daa594a5-31bf-46f7-8b99-65b896daa8a6	2024-02-27 04:54:14.991977	AO02000600000090175075753453	AO02000400008175620309964053	100	000400009493227897462169	Processo	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+bb4fbada-6dd0-4c6b-878e-7cb29f27f664	2024-02-27 04:54:14.991977	AO02000600000090175075753453	AO02000400008175620309964053	100	000400009624196668196955	Negado	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+ecced466-acde-4354-9858-1740a59768ba	2024-02-27 04:54:14.991977	AO02000600000090175075753453	AO02000400008175620309964053	100	000400003731102328526240	Conluido	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+a08238ba-d1a6-407d-bbe0-8691453c6f9b	2024-02-27 04:54:14.991977	AO02000400008175620309964053	AO02000600000090175075753453	100	000600008707908805101827	Processo	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+9554a3bb-9905-4c9e-a83d-6b878e1b171d	2024-02-27 04:54:14.991977	AO02000600000090175075753453	AO02000400008175620309964053	60	000400007257575548734943	Conluido	Interbancária	efb497fe-f272-4f38-bf9b-a890011b1355
+356be2a2-49e5-4086-916d-4cb372def05f	2024-02-26 04:56:50.658794	AO02000600006208185414257284	AO02000600000090175075753453	500	000600002707710477211175	Conluido	Interna	83c49105-2945-43a1-b9ae-8cd16a510132
+e320c06e-e8a1-4731-bcba-9a020b91579f	2024-02-27 04:36:36.670316	AO02000600006208185414257284	AO02000600000090175075753453	200	000600000798812164478310	Processo	Interna	83c49105-2945-43a1-b9ae-8cd16a510132
+17574c17-21d1-4536-b3d8-46b1da591cbb	2024-02-27 04:36:36.670316	AO02000600006208185414257284	AO02000600000090175075753453	100	000600007577210007265143	Conluido	Interna	83c49105-2945-43a1-b9ae-8cd16a510132
+96971b3b-1108-4cc4-b280-a595cb0d6f57	2024-02-27 04:36:36.670316	AO02000600006208185414257284	AO02000600000090175075753453	120	000600009205457242666409	Conluido	Interna	83c49105-2945-43a1-b9ae-8cd16a510132
+60138035-2bbb-4729-acf2-be64e5dafcee	2024-02-26 04:56:50.658794	AO02000600006208185414257284	AO02000600000090175075753453	500	000600002637567445323394	Conluido	Interna	83c49105-2945-43a1-b9ae-8cd16a510132
+c016c9a0-78f0-4651-b3d8-ea94f6b0123b	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	120	000600004556961555813740	Negado	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+5261d8ad-1d6c-4951-b1b5-ddb0d6cc342c	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	100	000600009491020827140114	Negado	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+7c800fa5-7212-4547-8abf-7a6512d9e36f	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	100	000600009268682411236887	Processo	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+79427094-6875-4a9d-bc88-ee39eaf524e0	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	140	000600009058489030748341	Processo	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+14da5fd7-c7fc-49e5-813e-b4d7b798c054	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	60	000600008603061711875613	Conluido	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+a56de0d3-e728-40c5-9d21-3968a1775ac2	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	100	000600001132243256291094	Conluido	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+e7c67f6e-092b-41c5-a383-0562ace757cb	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	50	000600009077187827855058	Conluido	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+5a333902-c475-4ace-bce6-08f9653f8e44	2024-02-27 04:36:36.670316	AO02000600000090175075753453	AO02000400008175620309964053	100	000400009624196668196955	Processo	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+ea0290e6-9cb4-4824-86ad-be8dbf04455a	2024-02-27 04:36:36.670316	AO02000600000090175075753453	AO02000400008175620309964053	100	000400003731102328526240	Processo	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+6b0c1a3d-0cbd-4d40-bfb9-34dac14be78b	2024-02-27 04:36:36.670316	AO02000400008175620309964053	AO02000600000090175075753453	100	000600008707908805101827	Conluido	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+446c6cd3-fd89-4e36-9289-7cc5f8408836	2024-02-27 04:36:36.670316	AO02000600000090175075753453	AO02000400008175620309964053	60	000400007257575548734943	Processo	Interbancária	83c49105-2945-43a1-b9ae-8cd16a510132
+\.
+
+
+--
+-- Name: depositos depositos_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.depositos
+    ADD CONSTRAINT depositos_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: funcionarios funcionarios_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT funcionarios_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: hitoricos_bancarios hitoricos_bancarios_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.hitoricos_bancarios
+    ADD CONSTRAINT hitoricos_bancarios_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: levantamentos levantamentos_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.levantamentos
+    ADD CONSTRAINT levantamentos_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: paises paises_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.paises
+    ADD CONSTRAINT paises_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: telefones telefones_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.telefones
+    ADD CONSTRAINT telefones_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: tokens tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.tokens
+    ADD CONSTRAINT tokens_pkey PRIMARY KEY (atualizacao);
+
+
+--
+-- Name: transferencias transferencias_pkey; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.transferencias
+    ADD CONSTRAINT transferencias_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: telefones_funcionarios uk_49ke9jc2kcyj2jkhxlaf5tp0j; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT uk_49ke9jc2kcyj2jkhxlaf5tp0j UNIQUE (telefone_id);
+
+
+--
+-- Name: funcionarios uk_funcionarios_bilhete_identidade; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT uk_funcionarios_bilhete_identidade UNIQUE (bilhete_identidade);
+
+
+--
+-- Name: funcionarios uk_funcionarios_email; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT uk_funcionarios_email UNIQUE (email);
+
+
+--
+-- Name: paises uk_paises_nome; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.paises
+    ADD CONSTRAINT uk_paises_nome UNIQUE (nome);
+
+
+--
+-- Name: telefones_funcionarios uk_telefones_funcionarios_funcionario_id_telefone_id; Type: CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT uk_telefones_funcionarios_funcionario_id_telefone_id UNIQUE (funcionario_id, telefone_id);
+
+
+--
+-- Name: idx_depositos_numero_ordem; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_depositos_numero_ordem ON public.depositos USING btree (numero_ordem);
+
+
+--
+-- Name: idx_funcionarios_bilhete_identidade; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_funcionarios_bilhete_identidade ON public.funcionarios USING btree (bilhete_identidade);
+
+
+--
+-- Name: idx_funcionarios_email; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_funcionarios_email ON public.funcionarios USING btree (email);
+
+
+--
+-- Name: idx_funcionarios_nome; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_funcionarios_nome ON public.funcionarios USING btree (nome);
+
+
+--
+-- Name: idx_levantamentos_numero_ordem; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_levantamentos_numero_ordem ON public.levantamentos USING btree (numero_ordem);
+
+
+--
+-- Name: idx_telefones_funcionarios_funcionario_id; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_telefones_funcionarios_funcionario_id ON public.telefones_funcionarios USING btree (funcionario_id);
+
+
+--
+-- Name: idx_transferencias_numero_ordem; Type: INDEX; Schema: public; Owner: intermediario
+--
+
+CREATE INDEX idx_transferencias_numero_ordem ON public.transferencias USING btree (numero_ordem);
+
+
+--
+-- Name: depositos fk_depositos_hitoricos_bancarios; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.depositos
+    ADD CONSTRAINT fk_depositos_hitoricos_bancarios FOREIGN KEY (historico_bancario_id) REFERENCES public.hitoricos_bancarios(id);
+
+
+--
+-- Name: funcionarios fk_funcionarios_paises; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.funcionarios
+    ADD CONSTRAINT fk_funcionarios_paises FOREIGN KEY (pais_id) REFERENCES public.paises(id);
+
+
+--
+-- Name: levantamentos fk_levantamentos_hitoricos_bancarios; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.levantamentos
+    ADD CONSTRAINT fk_levantamentos_hitoricos_bancarios FOREIGN KEY (historico_bancario_id) REFERENCES public.hitoricos_bancarios(id);
+
+
+--
+-- Name: telefones_funcionarios fk_telefones_funcionarios_funcionario; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT fk_telefones_funcionarios_funcionario FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id);
+
+
+--
+-- Name: telefones_funcionarios fk_telefones_funcionarios_telefone; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.telefones_funcionarios
+    ADD CONSTRAINT fk_telefones_funcionarios_telefone FOREIGN KEY (telefone_id) REFERENCES public.telefones(id);
+
+
+--
+-- Name: tokens fk_tokens_funcionarios; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.tokens
+    ADD CONSTRAINT fk_tokens_funcionarios FOREIGN KEY (funcionario_id) REFERENCES public.funcionarios(id) ON DELETE CASCADE;
+
+
+--
+-- Name: transferencias fk_transferencias_hitoricos_bancarios; Type: FK CONSTRAINT; Schema: public; Owner: intermediario
+--
+
+ALTER TABLE ONLY public.transferencias
+    ADD CONSTRAINT fk_transferencias_hitoricos_bancarios FOREIGN KEY (historico_bancario_id) REFERENCES public.hitoricos_bancarios(id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+

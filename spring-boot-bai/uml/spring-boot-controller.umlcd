@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_jr07UNXkEe6ab4zQ8f3pQA">
+  <modelElement href="spring-boot-controller.uml#_kS4UQ9XkEe6ab4zQ8f3pQA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_l3aCENXkEe6ab4zQ8f3pQA" source="_l3apKNXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUUjINXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_l3apINXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUaCsNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_l3apIdXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_l3apItXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUVKMNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_l3apI9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_l3apJNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_l3apJdXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="tokenService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lRuiINXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_l3apJtXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_l3apJ9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_plPlwNXkEe6ab4zQ8f3pQA" source="_plPlydXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUaCsdXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_plPlwdXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUfiQNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_plPlwtXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_plPlw9XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUaCstXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_plPlxNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPlxdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_plPlxtXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="contaService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lRuiIdXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_plPlx9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_plPlyNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qkdnENXkEe6ab4zQ8f3pQA" source="_qkdnGdXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUlB0dXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_qkdnEdXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUosMNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_qkdnEtXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_qkdnE9XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUlB0tXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_qkdnFNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnFdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_qkdnFtXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="funcionarioService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lRvwQNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_qkdnF9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_qkdnGNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v5jccNXkEe6ab4zQ8f3pQA" source="_v5jcedXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUosMdXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_v5jccdXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUrvgNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v5jcctXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_v5jcc9XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUosMtXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_v5jcdNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jcddXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v5jcdtXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="abstractService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lRwXUNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_v5jcd9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_v5jceNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zS-PUNXkEe6ab4zQ8f3pQA" source="_zS-2YNXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUsWkNXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_zS-PUdXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUwA8NXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zS-PUtXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_zS-PU9XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUsWkdXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_zS-PVNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-PVdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zS-PVtXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="pessoaService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lR0BsNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_zS-PV9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_zS-PWNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4gLUANXkEe6ab4zQ8f3pQA" source="_4gLUCdXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUfiQdXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_4gLUAdXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUlB0NXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_4gLUAtXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_4gLUA9XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUfiQtXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_4gLUBNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gLUBdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_4gLUBtXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="empresaService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lRvJMNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_4gLUB9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_4gLUCNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5rOK0NXkEe6ab4zQ8f3pQA" source="_5rOx4NXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_lUwA8dXkEe6ab4zQ8f3pQA"/>
+    <stereotypes xmi:id="_5rOK0dXkEe6ab4zQ8f3pQA" name="Reference">
+      <modelElement href="spring-boot-controller.uml#_lUzEQNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5rOK0tXkEe6ab4zQ8f3pQA" text=""/>
+    <sourceRole xmi:id="_5rOK09XkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="">
+      <modelElement href="spring-boot-controller.uml#_lUwA8tXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_5rOK1NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOK1dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5rOK1tXkEe6ab4zQ8f3pQA" aggregationKind="NONE" name="telefoneService" navigable="true">
+      <modelElement href="spring-boot-controller.uml#_lR1P0NXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_5rOK19XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_5rOK2NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_v5jcedXkEe6ab4zQ8f3pQA" name="PaisController" associationsOut="_v5jccNXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_ka-gUNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_v5jcetXkEe6ab4zQ8f3pQA" position="540.0,57.0"/>
+    <stereotypes xmi:id="_v5jce9XkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_ka_HYNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_v5jcfNXkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kbA8kNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_v5jcfdXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_v5jcftXkEe6ab4zQ8f3pQA" name="abstractService">
+      <modelElement href="spring-boot-controller.uml#_lRwXUNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcf9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lRzaoNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jcgNXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_v5jcgdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_v5jcgtXkEe6ab4zQ8f3pQA" name="AbstractService">
+        <modelElement href="spring-boot-controller.uml#_kfjeUNXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_v5jcg9XkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_k95AINXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jchNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_k99RkNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jchdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_k9-fsNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jchtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jch9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jciNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lL8qSdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jcidXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jcitXkEe6ab4zQ8f3pQA" name="pais">
+        <modelElement href="spring-boot-controller.uml#_k95AIdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jci9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcjNXkEe6ab4zQ8f3pQA" name="Pais">
+          <modelElement href="spring-boot-controller.uml#_kdLfwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jcjdXkEe6ab4zQ8f3pQA" name="findAll">
+      <modelElement href="spring-boot-controller.uml#_lLv18NXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcjtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLy5QNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jcj9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lL0HY9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jckNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jckdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jcktXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLzgUNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jck9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jclNXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lLv18dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcldXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcltXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jcl9XkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lLv18tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcmNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcmdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jcmtXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lLv189XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcm9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcnNXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jcndXkEe6ab4zQ8f3pQA" name="findById">
+      <modelElement href="spring-boot-controller.uml#_lL0HZdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcntXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lL3xwNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jcn9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lL3xxNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jcoNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jcodXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jcotXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lL3xwdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jco9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jcpNXkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lL0HZtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcpdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcptXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jcp9XkEe6ab4zQ8f3pQA" name="pagination">
+      <modelElement href="spring-boot-controller.uml#_lL4Y0tXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcqNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lL7cINXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jcqdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lL8qRtXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jcqtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jcq9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jcrNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lL8DMNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jcrdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jcrtXkEe6ab4zQ8f3pQA" name="page">
+        <modelElement href="spring-boot-controller.uml#_lL4Y09XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcr9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcsNXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jcsdXkEe6ab4zQ8f3pQA" name="size">
+        <modelElement href="spring-boot-controller.uml#_lL4Y1NXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcstXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcs9XkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jctNXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lL4Y1dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jctdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcttXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jct9XkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lL4Y1tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcuNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcudXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jcutXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lL4Y19XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcu9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcvNXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jcvdXkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lL9RUNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcvtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMAUoNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jcv9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMD_A9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jcwNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jcwdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jcwtXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMAUodXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jcw9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jcxNXkEe6ab4zQ8f3pQA" name="paises">
+        <modelElement href="spring-boot-controller.uml#_lL9RUdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcxdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jcxtXkEe6ab4zQ8f3pQA" name="List">
+          <modelElement href="spring-boot-controller.uml#_k8t7cNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jcx9XkEe6ab4zQ8f3pQA" name="update">
+      <modelElement href="spring-boot-controller.uml#_lMEmENXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jcyNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMI3gNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jcydXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMJek9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jcytXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jcy9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jczNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMI3gdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jczdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jcztXkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lMEmEdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jcz9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jc0NXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_v5jc0dXkEe6ab4zQ8f3pQA" name="pai">
+        <modelElement href="spring-boot-controller.uml#_lMEmEtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jc0tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jc09XkEe6ab4zQ8f3pQA" name="Pais">
+          <modelElement href="spring-boot-controller.uml#_kdLfwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_v5jc1NXkEe6ab4zQ8f3pQA" name="delete">
+      <modelElement href="spring-boot-controller.uml#_lMKFoNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_v5jc1dXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMNI8NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v5jc1tXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMNwA9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_v5jc19XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_v5jc2NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_v5jc2dXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMNwANXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_v5jc2tXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_v5jc29XkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lMKFodXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_v5jc3NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_v5jc3dXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qkdnGdXkEe6ab4zQ8f3pQA" name="FuncionarioController" associationsOut="_qkdnENXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kasMcNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_qkdnGtXkEe6ab4zQ8f3pQA" position="59.0,289.0"/>
+    <stereotypes xmi:id="_qkdnG9XkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_katakNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_qkdnHNXkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kay6INXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_qkdnHdXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_qkdnHtXkEe6ab4zQ8f3pQA" name="funcionarioService">
+      <modelElement href="spring-boot-controller.uml#_lRvwQNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_qkdnH9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_qkdnINXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_qkdnIdXkEe6ab4zQ8f3pQA" name="FuncionarioService">
+        <modelElement href="spring-boot-controller.uml#_kfxgwNXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qkdnItXkEe6ab4zQ8f3pQA" name="count">
+      <modelElement href="spring-boot-controller.uml#_k9vPINXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnI9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_k9y5gNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnJNXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_k9zgk9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnJdXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnJtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnJ9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lK_oANXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnKNXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnKdXkEe6ab4zQ8f3pQA" name="papel">
+        <modelElement href="spring-boot-controller.uml#_k9v2MNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnKtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnK9XkEe6ab4zQ8f3pQA" name="Papel">
+          <modelElement href="spring-boot-controller.uml#_kdS0gNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnLNXkEe6ab4zQ8f3pQA" name="findAll">
+      <modelElement href="spring-boot-controller.uml#_lKyzsNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnLdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lK3sMNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnLtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lK6Ic9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnL9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnMNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnMdXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lK4TQNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnMtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnM9XkEe6ab4zQ8f3pQA" name="pais">
+        <modelElement href="spring-boot-controller.uml#_lKzawNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnNNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnNdXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnNtXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lKzawdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnN9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnONXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnOdXkEe6ab4zQ8f3pQA" name="papel">
+        <modelElement href="spring-boot-controller.uml#_lKzawtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnOtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnO9XkEe6ab4zQ8f3pQA" name="Papel">
+          <modelElement href="spring-boot-controller.uml#_kdS0gNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnPNXkEe6ab4zQ8f3pQA" name="email">
+        <modelElement href="spring-boot-controller.uml#_lKzaw9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnPdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnPtXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnP9XkEe6ab4zQ8f3pQA" name="genero">
+        <modelElement href="spring-boot-controller.uml#_lKzaxNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnQNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnQdXkEe6ab4zQ8f3pQA" name="Genero">
+          <modelElement href="spring-boot-controller.uml#_kdBuwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnQtXkEe6ab4zQ8f3pQA" name="morada">
+        <modelElement href="spring-boot-controller.uml#_lKzaxdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnQ9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnRNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnRdXkEe6ab4zQ8f3pQA" name="bilheteIdentidade">
+        <modelElement href="spring-boot-controller.uml#_lKzaxtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnRtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnR9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnSNXkEe6ab4zQ8f3pQA" name="dataNascimento">
+        <modelElement href="spring-boot-controller.uml#_lKzax9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnSdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnStXkEe6ab4zQ8f3pQA" name="LocalDate">
+          <modelElement href="spring-boot-controller.uml#_k9f-kNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnS9XkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lKzayNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnTNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnTdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnTtXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lKzaydXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnT9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnUNXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnUdXkEe6ab4zQ8f3pQA" name="findById">
+      <modelElement href="spring-boot-controller.uml#_lK6vgNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnUtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lK-Z4NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnU9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lK_A8tXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnVNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnVdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnVtXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lK-Z4dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnV9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnWNXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lK6vgdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnWdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnWtXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnW9XkEe6ab4zQ8f3pQA" name="pagination">
+      <modelElement href="spring-boot-controller.uml#_lK_oAdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnXNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLFHkNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnXdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLIK4NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnXtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnX9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnYNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLFHkdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnYdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnYtXkEe6ab4zQ8f3pQA" name="page">
+        <modelElement href="spring-boot-controller.uml#_lLAPENXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnY9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnZNXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnZdXkEe6ab4zQ8f3pQA" name="size">
+        <modelElement href="spring-boot-controller.uml#_lLAPEdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnZtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnZ9XkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnaNXkEe6ab4zQ8f3pQA" name="pais">
+        <modelElement href="spring-boot-controller.uml#_lLAPEtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnadXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnatXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdna9XkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lLAPE9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnbNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnbdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnbtXkEe6ab4zQ8f3pQA" name="papel">
+        <modelElement href="spring-boot-controller.uml#_lLAPFNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnb9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdncNXkEe6ab4zQ8f3pQA" name="Papel">
+          <modelElement href="spring-boot-controller.uml#_kdS0gNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdncdXkEe6ab4zQ8f3pQA" name="email">
+        <modelElement href="spring-boot-controller.uml#_lLAPFdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnctXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnc9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdndNXkEe6ab4zQ8f3pQA" name="genero">
+        <modelElement href="spring-boot-controller.uml#_lLAPFtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnddXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdndtXkEe6ab4zQ8f3pQA" name="Genero">
+          <modelElement href="spring-boot-controller.uml#_kdBuwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnd9XkEe6ab4zQ8f3pQA" name="morada">
+        <modelElement href="spring-boot-controller.uml#_lLAPF9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdneNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnedXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnetXkEe6ab4zQ8f3pQA" name="bilheteIdentidade">
+        <modelElement href="spring-boot-controller.uml#_lLAPGNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdne9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnfNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnfdXkEe6ab4zQ8f3pQA" name="dataNascimento">
+        <modelElement href="spring-boot-controller.uml#_lLAPGdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnftXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnf9XkEe6ab4zQ8f3pQA" name="LocalDate">
+          <modelElement href="spring-boot-controller.uml#_k9f-kNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdngNXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lLA2INXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdngdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdngtXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdng9XkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lLA2IdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnhNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnhdXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnhtXkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lLIK49XkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnh9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLL1QNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdniNXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLQGstXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnidXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnitXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdni9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLMcUNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnjNXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnjdXkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lLIx8NXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnjtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnj9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnkNXkEe6ab4zQ8f3pQA" name="funcionarioDTO">
+        <modelElement href="spring-boot-controller.uml#_lLIx8dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnkdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnktXkEe6ab4zQ8f3pQA" name="FuncionarioDTO">
+          <modelElement href="spring-boot-controller.uml#_kbdBcNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnk9XkEe6ab4zQ8f3pQA" name="telefoneDTO">
+        <modelElement href="spring-boot-controller.uml#_lLIx8tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnlNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnldXkEe6ab4zQ8f3pQA" name="TelefoneDTO">
+          <modelElement href="spring-boot-controller.uml#_kbwjcNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnltXkEe6ab4zQ8f3pQA" name="fotoPerfil">
+        <modelElement href="spring-boot-controller.uml#_lLIx89XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnl9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnmNXkEe6ab4zQ8f3pQA" name="Optional">
+          <modelElement href="spring-boot-controller.uml#_k9jo8NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnmdXkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lLQtwNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnmtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLUYINXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnm9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLYCgtXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnnNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnndXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnntXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLUYIdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnn9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnoNXkEe6ab4zQ8f3pQA" name="funcionariosDTO">
+        <modelElement href="spring-boot-controller.uml#_lLQtwdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnodXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnotXkEe6ab4zQ8f3pQA" name="List">
+          <modelElement href="spring-boot-controller.uml#_k8t7cNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdno9XkEe6ab4zQ8f3pQA" name="update">
+      <modelElement href="spring-boot-controller.uml#_lLYpkNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnpNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLbs4NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnpdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLcT99XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnptXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnp9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnqNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLbs4dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnqdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnqtXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lLYpkdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnq9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnrNXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnrdXkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lLYpktXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnrtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnr9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnsNXkEe6ab4zQ8f3pQA" name="funcionarioUpdateDTO">
+        <modelElement href="spring-boot-controller.uml#_lLYpk9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnsdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnstXkEe6ab4zQ8f3pQA" name="FuncionarioUpdateDTO">
+          <modelElement href="spring-boot-controller.uml#_kblkUNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdns9XkEe6ab4zQ8f3pQA" name="updateEmail">
+      <modelElement href="spring-boot-controller.uml#_lLc7AdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdntNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLf-UNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdntdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLglZdXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnttXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnt9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnuNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLf-UdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnudXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnutXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lLc7AtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnu9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnvNXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnvdXkEe6ab4zQ8f3pQA" name="funcionarioEmailDTO">
+        <modelElement href="spring-boot-controller.uml#_lLc7A9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnvtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnv9XkEe6ab4zQ8f3pQA" name="FuncionarioEmailDTO">
+          <modelElement href="spring-boot-controller.uml#_kbhS4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnwNXkEe6ab4zQ8f3pQA" name="updatePassword">
+      <modelElement href="spring-boot-controller.uml#_lLhMcNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnwdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLk20NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnwtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLld49XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdnw9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdnxNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdnxdXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLk20dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdnxtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdnx9XkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lLhMcdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdnyNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnydXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdnytXkEe6ab4zQ8f3pQA" name="funcionarioSenhaDTO">
+        <modelElement href="spring-boot-controller.uml#_lLhMctXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdny9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdnzNXkEe6ab4zQ8f3pQA" name="FuncionarioSenhaDTO">
+          <modelElement href="spring-boot-controller.uml#_kbjIENXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdnzdXkEe6ab4zQ8f3pQA" name="updateProfilePhoto">
+      <modelElement href="spring-boot-controller.uml#_lLld5tXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdnztXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLpIQNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdnz9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLqWYNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdn0NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdn0dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdn0tXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLpIQdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdn09XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdn1NXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lLmE8NXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdn1dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdn1tXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qkdn19XkEe6ab4zQ8f3pQA" name="fotoPerfil">
+        <modelElement href="spring-boot-controller.uml#_lLmE8dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdn2NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdn2dXkEe6ab4zQ8f3pQA" name="MultipartFile">
+          <modelElement href="spring-boot-controller.uml#_k9q9sdXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qkdn2tXkEe6ab4zQ8f3pQA" name="delete">
+      <modelElement href="spring-boot-controller.uml#_lLq9cNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_qkdn29XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lLuAwNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qkdn3NXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lLun09XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_qkdn3dXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_qkdn3tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qkdn39XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lLun0NXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_qkdn4NXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qkdn4dXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lLq9cdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_qkdn4tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_qkdn49XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_l3apKNXkEe6ab4zQ8f3pQA" name="AuthenticationController" associationsOut="_l3aCENXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kaFIcNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_l3apKdXkEe6ab4zQ8f3pQA" position="62.0,62.0"/>
+    <stereotypes xmi:id="_l3apKtXkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_kaGWkNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_l3apK9XkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kaIy0NXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_l3apLNXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_l3apLdXkEe6ab4zQ8f3pQA" name="tokenService">
+      <modelElement href="spring-boot-controller.uml#_lRuiINXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_l3apLtXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_l3apL9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_l3apMNXkEe6ab4zQ8f3pQA" name="TokenService">
+        <modelElement href="spring-boot-controller.uml#_kf_jMNXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_l3apMdXkEe6ab4zQ8f3pQA" name="refreshToken">
+      <modelElement href="spring-boot-controller.uml#_k8ob4NXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_l3apMtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_k8sGQNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_l3apM9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_k8stU9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_l3apNNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_l3apNdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_l3apNtXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lJ40wNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_l3apN9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_l3apONXkEe6ab4zQ8f3pQA" name="refreshTokenDTO">
+        <modelElement href="spring-boot-controller.uml#_k8ob4dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_l3apOdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_l3apOtXkEe6ab4zQ8f3pQA" name="RefreshTokenDTO">
+          <modelElement href="spring-boot-controller.uml#_kbuuQNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_l3apO9XkEe6ab4zQ8f3pQA" name="authentication">
+      <modelElement href="spring-boot-controller.uml#_lJyHENXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_l3apPNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lJ3moNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_l3apPdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lJ4NstXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_l3apPtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_l3apP9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_l3apQNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lJ3modXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_l3apQdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_l3apQtXkEe6ab4zQ8f3pQA" name="authentication">
+        <modelElement href="spring-boot-controller.uml#_lJyHEdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_l3apQ9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_l3apRNXkEe6ab4zQ8f3pQA" name="Authentication">
+          <modelElement href="spring-boot-controller.uml#_k8NlINXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zS-2YNXkEe6ab4zQ8f3pQA" name="PessoaController" associationsOut="_zS-PUNXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kbHDMNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_zS-2YdXkEe6ab4zQ8f3pQA" position="66.0,594.0"/>
+    <stereotypes xmi:id="_zS-2YtXkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_kbHqQNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_zS-2Y9XkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kbL7sNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_zS-2ZNXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_zS-2ZdXkEe6ab4zQ8f3pQA" name="pessoaService">
+      <modelElement href="spring-boot-controller.uml#_lR0BsNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_zS-2ZtXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_zS-2Z9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_zS-2aNXkEe6ab4zQ8f3pQA" name="PessoaService">
+        <modelElement href="spring-boot-controller.uml#_kf740NXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zS-2adXkEe6ab4zQ8f3pQA" name="count">
+      <modelElement href="spring-boot-controller.uml#_kbI4YNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2atXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kbJfcNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-2a9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kbJfcdXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-2bNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-2bdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-2btXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMYvI9XkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-2b9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zS-2cNXkEe6ab4zQ8f3pQA" name="findAll">
+      <modelElement href="spring-boot-controller.uml#_lMO-INXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2cdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMSBcNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-2ctXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMT2qtXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-2c9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-2dNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-2ddXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMSogNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-2dtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-2d9XkEe6ab4zQ8f3pQA" name="pais">
+        <modelElement href="spring-boot-controller.uml#_lMO-IdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2eNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2edXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2etXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lMO-ItXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2e9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2fNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2fdXkEe6ab4zQ8f3pQA" name="email">
+        <modelElement href="spring-boot-controller.uml#_lMO-I9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2ftXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2f9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2gNXkEe6ab4zQ8f3pQA" name="genero">
+        <modelElement href="spring-boot-controller.uml#_lMO-JNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2gdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2gtXkEe6ab4zQ8f3pQA" name="Genero">
+          <modelElement href="spring-boot-controller.uml#_kdBuwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2g9XkEe6ab4zQ8f3pQA" name="morada">
+        <modelElement href="spring-boot-controller.uml#_lMO-JdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2hNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2hdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2htXkEe6ab4zQ8f3pQA" name="bilheteIdentidade">
+        <modelElement href="spring-boot-controller.uml#_lMO-JtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2h9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2iNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2idXkEe6ab4zQ8f3pQA" name="dataNascimento">
+        <modelElement href="spring-boot-controller.uml#_lMO-J9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2itXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2i9XkEe6ab4zQ8f3pQA" name="LocalDate">
+          <modelElement href="spring-boot-controller.uml#_k9f-kNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2jNXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lMO-KNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2jdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2jtXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2j9XkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lMO-KdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2kNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2kdXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-2ktXkEe6ab4zQ8f3pQA" name="findById">
+      <modelElement href="spring-boot-controller.uml#_lMUdsNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2k9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMXhANXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-2lNXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMYvINXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-2ldXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-2ltXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-2l9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMYIENXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-2mNXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-2mdXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lMUdsdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2mtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2m9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-2nNXkEe6ab4zQ8f3pQA" name="pagination">
+      <modelElement href="spring-boot-controller.uml#_lMZWMNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2ndXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMcZgNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-2ntXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMeOvNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-2n9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-2oNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-2odXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMdAkNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-2otXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-2o9XkEe6ab4zQ8f3pQA" name="page">
+        <modelElement href="spring-boot-controller.uml#_lMZWMdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2pNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2pdXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2ptXkEe6ab4zQ8f3pQA" name="size">
+        <modelElement href="spring-boot-controller.uml#_lMZWMtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2p9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2qNXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2qdXkEe6ab4zQ8f3pQA" name="pais">
+        <modelElement href="spring-boot-controller.uml#_lMZWM9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2qtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2q9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2rNXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lMZWNNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2rdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2rtXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2r9XkEe6ab4zQ8f3pQA" name="email">
+        <modelElement href="spring-boot-controller.uml#_lMZWNdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2sNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2sdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2stXkEe6ab4zQ8f3pQA" name="genero">
+        <modelElement href="spring-boot-controller.uml#_lMZWNtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2s9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2tNXkEe6ab4zQ8f3pQA" name="Genero">
+          <modelElement href="spring-boot-controller.uml#_kdBuwNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2tdXkEe6ab4zQ8f3pQA" name="morada">
+        <modelElement href="spring-boot-controller.uml#_lMZWN9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2ttXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2t9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2uNXkEe6ab4zQ8f3pQA" name="bilheteIdentidade">
+        <modelElement href="spring-boot-controller.uml#_lMZWONXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2udXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2utXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2u9XkEe6ab4zQ8f3pQA" name="dataNascimento">
+        <modelElement href="spring-boot-controller.uml#_lMZWOdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2vNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2vdXkEe6ab4zQ8f3pQA" name="LocalDate">
+          <modelElement href="spring-boot-controller.uml#_k9f-kNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2vtXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lMZWOtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2v9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2wNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2wdXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lMZWO9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2wtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2w9XkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-2xNXkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lMe1wtXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2xdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMh5ENXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-2xtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMmKgtXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-2x9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-2yNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-2ydXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMigINXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-2ytXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-2y9XkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lMe1w9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2zNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2zdXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2ztXkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lMfc0NXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2z9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-20NXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-20dXkEe6ab4zQ8f3pQA" name="pessoaDTO">
+        <modelElement href="spring-boot-controller.uml#_lMfc0dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-20tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-209XkEe6ab4zQ8f3pQA" name="PessoaDTO">
+          <modelElement href="spring-boot-controller.uml#_kboAkNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-21NXkEe6ab4zQ8f3pQA" name="fotoPerfil">
+        <modelElement href="spring-boot-controller.uml#_lMfc0tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-21dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-21tXkEe6ab4zQ8f3pQA" name="Optional">
+          <modelElement href="spring-boot-controller.uml#_k9jo8NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-219XkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lMmKhdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-22NXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lMrqENXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-22dXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lMv7g9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-22tXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-229XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-23NXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lMrqEdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-23dXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-23tXkEe6ab4zQ8f3pQA" name="pessoasDTO">
+        <modelElement href="spring-boot-controller.uml#_lMmKhtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-239XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-24NXkEe6ab4zQ8f3pQA" name="List">
+          <modelElement href="spring-boot-controller.uml#_k8t7cNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-24dXkEe6ab4zQ8f3pQA" name="update">
+      <modelElement href="spring-boot-controller.uml#_lMwikNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-24tXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lM00ANXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-249XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lM1bF9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-25NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-25dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-25tXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lM00AdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-259XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-26NXkEe6ab4zQ8f3pQA" name="idPessoa">
+        <modelElement href="spring-boot-controller.uml#_lMxJoNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-26dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-26tXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-269XkEe6ab4zQ8f3pQA" name="idPais">
+        <modelElement href="spring-boot-controller.uml#_lMxJodXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-27NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-27dXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-27tXkEe6ab4zQ8f3pQA" name="pessoaUpdateDTO">
+        <modelElement href="spring-boot-controller.uml#_lMxJotXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-279XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-28NXkEe6ab4zQ8f3pQA" name="PessoaUpdateDTO">
+          <modelElement href="spring-boot-controller.uml#_kbrq8NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-28dXkEe6ab4zQ8f3pQA" name="updateProfilePhoto">
+      <modelElement href="spring-boot-controller.uml#_lM2CINXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-28tXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lM5FcNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-289XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lM5shNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-29NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-29dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-29tXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lM5FcdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-299XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-2-NXkEe6ab4zQ8f3pQA" name="idPessoa">
+        <modelElement href="spring-boot-controller.uml#_lM2CIdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2-dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2-tXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_zS-2-9XkEe6ab4zQ8f3pQA" name="fotoPerfil">
+        <modelElement href="spring-boot-controller.uml#_lM2CItXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-2_NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-2_dXkEe6ab4zQ8f3pQA" name="MultipartFile">
+          <modelElement href="spring-boot-controller.uml#_k9q9sdXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zS-2_tXkEe6ab4zQ8f3pQA" name="delete">
+      <modelElement href="spring-boot-controller.uml#_lM6TkNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_zS-2_9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lM_MENXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zS-3ANXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lM_zItXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_zS-3AdXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_zS-3AtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zS-3A9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lM_MEdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_zS-3BNXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zS-3BdXkEe6ab4zQ8f3pQA" name="idPessoa">
+        <modelElement href="spring-boot-controller.uml#_lM66oNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_zS-3BtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_zS-3B9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4gLUCdXkEe6ab4zQ8f3pQA" name="EmpresaController" associationsOut="_4gLUANXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kadi8NXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_4gL7ENXkEe6ab4zQ8f3pQA" position="67.0,855.0"/>
+    <stereotypes xmi:id="_4gL7EdXkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_kaexENXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_4gL7EtXkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kajpkNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_4gL7E9XkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_4gL7FNXkEe6ab4zQ8f3pQA" name="empresaService">
+      <modelElement href="spring-boot-controller.uml#_lRvJMNXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_4gL7FdXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_4gL7FtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_4gL7F9XkEe6ab4zQ8f3pQA" name="EmpresaService">
+        <modelElement href="spring-boot-controller.uml#_kfvrkNXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_4gL7GNXkEe6ab4zQ8f3pQA" name="count">
+      <modelElement href="spring-boot-controller.uml#_kaf_MNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7GdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kagmQNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7GtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kahNUNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7G9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7HNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7HdXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKOzAtXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7HtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_4gL7H9XkEe6ab4zQ8f3pQA" name="findAll">
+      <modelElement href="spring-boot-controller.uml#_lKFpENXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7INXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKJTcNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7IdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKJ6idXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7ItXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7I9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7JNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKJTcdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7JdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7JtXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lKFpEdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7J9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7KNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7KdXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lKFpEtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7KtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7K9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7LNXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lKFpE9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7LdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7LtXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7L9XkEe6ab4zQ8f3pQA" name="findById">
+      <modelElement href="spring-boot-controller.uml#_lKKhkNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7MNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKNk4NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7MdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKOL89XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7MtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7M9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7NNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKOL8NXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7NdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7NtXkEe6ab4zQ8f3pQA" name="idEmpresa">
+        <modelElement href="spring-boot-controller.uml#_lKKhkdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7N9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7ONXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7OdXkEe6ab4zQ8f3pQA" name="pagination">
+      <modelElement href="spring-boot-controller.uml#_lKOzA9XkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7OtXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKSdYNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7O9XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKTridXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7PNXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7PdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7PtXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKTEcNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7P9XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7QNXkEe6ab4zQ8f3pQA" name="page">
+        <modelElement href="spring-boot-controller.uml#_lKOzBNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7QdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7QtXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7Q9XkEe6ab4zQ8f3pQA" name="size">
+        <modelElement href="spring-boot-controller.uml#_lKPaENXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7RNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7RdXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7RtXkEe6ab4zQ8f3pQA" name="nome">
+        <modelElement href="spring-boot-controller.uml#_lKPaEdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7R9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7SNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7SdXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lKPaEtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7StXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7S9XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7TNXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lKPaE9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7TdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7TtXkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7T9XkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lKUSkNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7UNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKYkANXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7UdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKaZMNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7UtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7U9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7VNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKZLENXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7VdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7VtXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lKUSkdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7V9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7WNXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7WdXkEe6ab4zQ8f3pQA" name="empresaDTO">
+        <modelElement href="spring-boot-controller.uml#_lKUSktXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7WtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7W9XkEe6ab4zQ8f3pQA" name="EmpresaDTO">
+          <modelElement href="spring-boot-controller.uml#_kbZXENXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7XNXkEe6ab4zQ8f3pQA" name="create">
+      <modelElement href="spring-boot-controller.uml#_lKaZM9XkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7XdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKfRsNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7XtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKlYU9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7X9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7YNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7YdXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKfRsdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7YtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7Y9XkEe6ab4zQ8f3pQA" name="empresasDTO">
+        <modelElement href="spring-boot-controller.uml#_lKbAQNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7ZNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7ZdXkEe6ab4zQ8f3pQA" name="List">
+          <modelElement href="spring-boot-controller.uml#_k8t7cNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7ZtXkEe6ab4zQ8f3pQA" name="update">
+      <modelElement href="spring-boot-controller.uml#_lKl_YtXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7Z9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKqQ0NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7aNXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKq35dXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7adXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7atXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7a9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKqQ0dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7bNXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7bdXkEe6ab4zQ8f3pQA" name="idEmpresa">
+        <modelElement href="spring-boot-controller.uml#_lKl_Y9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7btXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7b9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_4gL7cNXkEe6ab4zQ8f3pQA" name="empresaUpdateDTO">
+        <modelElement href="spring-boot-controller.uml#_lKmmcNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7cdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7ctXkEe6ab4zQ8f3pQA" name="EmpresaUpdateDTO">
+          <modelElement href="spring-boot-controller.uml#_kbbMQNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_4gL7c9XkEe6ab4zQ8f3pQA" name="delete">
+      <modelElement href="spring-boot-controller.uml#_lKre8dXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_4gL7dNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKxlkNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4gL7ddXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lKyMotXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_4gL7dtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_4gL7d9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_4gL7eNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKxlkdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_4gL7edXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_4gL7etXkEe6ab4zQ8f3pQA" name="idEmpresa">
+        <modelElement href="spring-boot-controller.uml#_lKre8tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_4gL7e9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_4gL7fNXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_plPlydXkEe6ab4zQ8f3pQA" name="ContaController" associationsOut="_plPlwNXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kaMdMNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_plPlytXkEe6ab4zQ8f3pQA" position="77.0,1108.0"/>
+    <stereotypes xmi:id="_plPly9XkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_kaNrUNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_plPlzNXkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kaXcUNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_plPlzdXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_plPlztXkEe6ab4zQ8f3pQA" name="contaService">
+      <modelElement href="spring-boot-controller.uml#_lRuiIdXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_plPlz9XkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_plPl0NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_plPl0dXkEe6ab4zQ8f3pQA" name="ContaService">
+        <modelElement href="spring-boot-controller.uml#_kfsoQNXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_plPl0tXkEe6ab4zQ8f3pQA" name="findByNumeroConta">
+      <modelElement href="spring-boot-controller.uml#_kaO5cNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_plPl09XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kaPggNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_plPl1NXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kaQuoNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_plPl1dXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPl1tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_plPl19XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lJ_icdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_plPl2NXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_plPl2dXkEe6ab4zQ8f3pQA" name="numeroConta">
+        <modelElement href="spring-boot-controller.uml#_kaO5cdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl2tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl29XkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_plPl3NXkEe6ab4zQ8f3pQA" name="findByIBAN">
+      <modelElement href="spring-boot-controller.uml#_kaRVsNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_plPl3dXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kaSj0NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_plPl3tXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kaTx8NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_plPl39XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPl4NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_plPl4dXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lJ_ictXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_plPl4tXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_plPl49XkEe6ab4zQ8f3pQA" name="iban">
+        <modelElement href="spring-boot-controller.uml#_kaRVsdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl5NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl5dXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_plPl5tXkEe6ab4zQ8f3pQA" name="count">
+      <modelElement href="spring-boot-controller.uml#_kaTx89XkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_plPl59XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kaVAENXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_plPl6NXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kaVnINXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_plPl6dXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPl6tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_plPl69XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKAJgNXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_plPl7NXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_plPl7dXkEe6ab4zQ8f3pQA" name="findAll">
+      <modelElement href="spring-boot-controller.uml#_lJ5b0NXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_plPl7tXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lJ9tQNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_plPl79XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lJ-7Z9XkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_plPl8NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPl8dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_plPl8tXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lJ9tQdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_plPl89XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_plPl9NXkEe6ab4zQ8f3pQA" name="numeroConta">
+        <modelElement href="spring-boot-controller.uml#_lJ5b0dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl9dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl9tXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPl99XkEe6ab4zQ8f3pQA" name="iban">
+        <modelElement href="spring-boot-controller.uml#_lJ6C4NXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl-NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl-dXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPl-tXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lJ6C4dXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl-9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl_NXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPl_dXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lJ6C4tXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPl_tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPl_9XkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_plPmANXkEe6ab4zQ8f3pQA" name="pagination">
+      <modelElement href="spring-boot-controller.uml#_lKAJgdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_plPmAdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lKDz4NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_plPmAtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_plPmA9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_plPmBNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lKDz4dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_plPmBdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_plPmBtXkEe6ab4zQ8f3pQA" name="page">
+        <modelElement href="spring-boot-controller.uml#_lKAJgtXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmB9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmCNXkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPmCdXkEe6ab4zQ8f3pQA" name="size">
+        <modelElement href="spring-boot-controller.uml#_lKAJg9XkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmCtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmC9XkEe6ab4zQ8f3pQA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPmDNXkEe6ab4zQ8f3pQA" name="numeroConta">
+        <modelElement href="spring-boot-controller.uml#_lKAJhNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmDdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmDtXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPmD9XkEe6ab4zQ8f3pQA" name="iban">
+        <modelElement href="spring-boot-controller.uml#_lKAJhdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmENXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmEdXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPmEtXkEe6ab4zQ8f3pQA" name="orderBy">
+        <modelElement href="spring-boot-controller.uml#_lKAwkNXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmE9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmFNXkEe6ab4zQ8f3pQA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_plPmFdXkEe6ab4zQ8f3pQA" name="direction">
+        <modelElement href="spring-boot-controller.uml#_lKAwkdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_plPmFtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_plPmF9XkEe6ab4zQ8f3pQA" name="Direction">
+          <modelElement href="spring-boot-controller.uml#_k8794NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5rOx4NXkEe6ab4zQ8f3pQA" name="TelefoneController" associationsOut="_5rOK0NXkEe6ab4zQ8f3pQA">
+    <modelElement href="spring-boot-controller.uml#_kbT3gNXkEe6ab4zQ8f3pQA"/>
+    <visualProperties xmi:id="_5rOx4dXkEe6ab4zQ8f3pQA" position="726.0,859.0"/>
+    <stereotypes xmi:id="_5rOx4tXkEe6ab4zQ8f3pQA" name="LegacyStyledElement">
+      <modelElement href="spring-boot-controller.uml#_kbUekNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_5rOx49XkEe6ab4zQ8f3pQA" name="Annotations">
+      <modelElement href="spring-boot-controller.uml#_kbWTwNXkEe6ab4zQ8f3pQA"/>
+    </stereotypes>
+    <visibility xmi:id="_5rOx5NXkEe6ab4zQ8f3pQA" label="+"/>
+    <attributes xmi:id="_5rOx5dXkEe6ab4zQ8f3pQA" name="telefoneService">
+      <modelElement href="spring-boot-controller.uml#_lR1P0NXkEe6ab4zQ8f3pQA"/>
+      <visibility xmi:id="_5rOx5tXkEe6ab4zQ8f3pQA" label="-"/>
+      <cardinality xmi:id="_5rOx59XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <type xmi:id="_5rOx6NXkEe6ab4zQ8f3pQA" name="TelefoneService">
+        <modelElement href="spring-boot-controller.uml#_kf-VENXkEe6ab4zQ8f3pQA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5rOx6dXkEe6ab4zQ8f3pQA" name="count">
+      <modelElement href="spring-boot-controller.uml#_kbUekdXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_5rOx6tXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_kbVFoNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5rOx69XkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_kbVssNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_5rOx7NXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOx7dXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5rOx7tXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lNErpdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_5rOx79XkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5rOx8NXkEe6ab4zQ8f3pQA" name="findAllByFuncionario">
+      <modelElement href="spring-boot-controller.uml#_lNBBQNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_5rOx8dXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lNEEkNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5rOx8tXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lNErotXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_5rOx89XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOx9NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5rOx9dXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lNEEkdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_5rOx9tXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5rOx99XkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lNBBQdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOx-NXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOx-dXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5rOx-tXkEe6ab4zQ8f3pQA" name="createByFuncionario">
+      <modelElement href="spring-boot-controller.uml#_lNFSsNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_5rOx-9XkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lNIWANXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5rOx_NXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lNI9FdXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_5rOx_dXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOx_tXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5rOx_9XkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lNIWAdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_5rOyANXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5rOyAdXkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lNFSsdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyAtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyA9XkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5rOyBNXkEe6ab4zQ8f3pQA" name="telefoneDTO">
+        <modelElement href="spring-boot-controller.uml#_lNFSstXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyBdXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyBtXkEe6ab4zQ8f3pQA" name="TelefoneDTO">
+          <modelElement href="spring-boot-controller.uml#_kbwjcNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5rOyB9XkEe6ab4zQ8f3pQA" name="update">
+      <modelElement href="spring-boot-controller.uml#_lNI9GNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_5rOyCNXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lNMncNXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5rOyCdXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lNNOhdXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_5rOyCtXkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOyC9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5rOyDNXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lNMncdXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_5rOyDdXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5rOyDtXkEe6ab4zQ8f3pQA" name="idTelefone">
+        <modelElement href="spring-boot-controller.uml#_lNJkINXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyD9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyENXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5rOyEdXkEe6ab4zQ8f3pQA" name="telefoneDTO">
+        <modelElement href="spring-boot-controller.uml#_lNJkIdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyEtXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyE9XkEe6ab4zQ8f3pQA" name="TelefoneDTO">
+          <modelElement href="spring-boot-controller.uml#_kbwjcNXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5rOyFNXkEe6ab4zQ8f3pQA" name="deleteByFuncionario">
+      <modelElement href="spring-boot-controller.uml#_lNN1kNXkEe6ab4zQ8f3pQA"/>
+      <stereotypes xmi:id="_5rOyFdXkEe6ab4zQ8f3pQA" name="Generics">
+        <modelElement href="spring-boot-controller.uml#_lNQ44NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5rOyFtXkEe6ab4zQ8f3pQA" name="Annotations">
+        <modelElement href="spring-boot-controller.uml#_lNRf9NXkEe6ab4zQ8f3pQA"/>
+      </stereotypes>
+      <visibility xmi:id="_5rOyF9XkEe6ab4zQ8f3pQA" label="+"/>
+      <cardinality xmi:id="_5rOyGNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5rOyGdXkEe6ab4zQ8f3pQA">
+        <modelElement href="spring-boot-controller.uml#_lNQ44dXkEe6ab4zQ8f3pQA"/>
+        <type xmi:id="_5rOyGtXkEe6ab4zQ8f3pQA" name="ResponseEntity">
+          <modelElement href="spring-boot-controller.uml#_k8J6wtXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5rOyG9XkEe6ab4zQ8f3pQA" name="idFuncionario">
+        <modelElement href="spring-boot-controller.uml#_lNN1kdXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyHNXkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyHdXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5rOyHtXkEe6ab4zQ8f3pQA" name="idTelefone">
+        <modelElement href="spring-boot-controller.uml#_lNN1ktXkEe6ab4zQ8f3pQA"/>
+        <cardinality xmi:id="_5rOyH9XkEe6ab4zQ8f3pQA" label="1" max="1" min="1"/>
+        <type xmi:id="_5rOyINXkEe6ab4zQ8f3pQA" name="UUID">
+          <modelElement href="spring-boot-controller.uml#_k9Pf4NXkEe6ab4zQ8f3pQA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

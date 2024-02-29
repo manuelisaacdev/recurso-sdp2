@@ -1,0 +1,70 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bfa
+    username: bfa
+    password: bfa@25991
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format-sql: true
+        show-sql: true
+  messages:
+    always-use-message-format: false
+    basename: locale/messages
+    encoding: windows-1252
+    fallback-to-system-locale: false
+    use-code-as-default-message: false
+  web:
+    resources:
+      static-locations: file:storage
+  mvc:
+    static-path-pattern: /resources/**
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-bank
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+logging:
+  level:
+    '[org.springframework.security]': debug
+application:
+  jwt:
+    type: "Bearer "
+    access-token:
+      expiration: 86400000
+      secret: dLBBN2mYgDIDHqZjtb63cdK3ap7FvPn8
+    refresh-token:
+      expiration: 604800000
+      secret: YIrN7ZfGhjMqzPOEzqx1mrp53Zc2wn68
+    header-authorization: authorization
+  storage:
+   location: storage
+  bfa: 
+    country: AO
+    code: "00040000"
+    control-number: "02"
+    prefix-iban: "AO0200040000"
+    size-account-number: 16

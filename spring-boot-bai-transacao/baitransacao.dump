@@ -1,0 +1,188 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.1
+-- Dumped by pg_dump version 16.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: depositos; Type: TABLE; Schema: public; Owner: baitransacao
+--
+
+CREATE TABLE public.depositos (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    montante double precision NOT NULL,
+    numero_conta character varying(255) NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.depositos OWNER TO baitransacao;
+
+--
+-- Name: levantamentos; Type: TABLE; Schema: public; Owner: baitransacao
+--
+
+CREATE TABLE public.levantamentos (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    montante double precision NOT NULL,
+    numero_conta character varying(255) NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.levantamentos OWNER TO baitransacao;
+
+--
+-- Name: transferencias; Type: TABLE; Schema: public; Owner: baitransacao
+--
+
+CREATE TABLE public.transferencias (
+    id uuid NOT NULL,
+    data_transacao timestamp(6) without time zone NOT NULL,
+    iban_conta_destino character varying(255) NOT NULL,
+    iban_conta_origem character varying(255) NOT NULL,
+    montante double precision NOT NULL,
+    numero_ordem character varying(255),
+    status character varying(255) NOT NULL,
+    tipo_transferencia character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.transferencias OWNER TO baitransacao;
+
+--
+-- Data for Name: depositos; Type: TABLE DATA; Schema: public; Owner: baitransacao
+--
+
+COPY public.depositos (id, data_transacao, montante, numero_conta, numero_ordem, status) FROM stdin;
+d3577a13-f2f0-460b-9164-796188f1799c	2024-02-09 14:42:39.053689	100	0090175075753453	000600001932107853051834	Conluido
+e803c182-ed90-4212-abc3-dee5b6fd62c8	2024-02-27 03:37:47.942022	10000	0090175075753453	000600008680965860652786	Conluido
+\.
+
+
+--
+-- Data for Name: levantamentos; Type: TABLE DATA; Schema: public; Owner: baitransacao
+--
+
+COPY public.levantamentos (id, data_transacao, montante, numero_conta, numero_ordem, status) FROM stdin;
+44c243a4-7460-4d17-a935-6c07845c4739	2024-02-09 14:50:12.730739	1000	0090175075753453	000600002361128677208085	Conluido
+\.
+
+
+--
+-- Data for Name: transferencias; Type: TABLE DATA; Schema: public; Owner: baitransacao
+--
+
+COPY public.transferencias (id, data_transacao, iban_conta_destino, iban_conta_origem, montante, numero_ordem, status, tipo_transferencia) FROM stdin;
+356be2a2-49e5-4086-916d-4cb372def05f	2024-02-09 17:00:02.005323	AO02000600006208185414257284	AO02000600000090175075753453	500	000600002707710477211175	Conluido	Interna
+60138035-2bbb-4729-acf2-be64e5dafcee	2024-02-09 19:54:12.601638	AO02000600006208185414257284	AO02000600000090175075753453	500	000600002637567445323394	Conluido	Interna
+e320c06e-e8a1-4731-bcba-9a020b91579f	2024-02-27 03:28:13.711793	AO02000600006208185414257284	AO02000600000090175075753453	200	000600000798812164478310	Processo	Interna
+17574c17-21d1-4536-b3d8-46b1da591cbb	2024-02-27 03:34:08.614524	AO02000600006208185414257284	AO02000600000090175075753453	100	000600007577210007265143	Conluido	Interna
+96971b3b-1108-4cc4-b280-a595cb0d6f57	2024-02-27 03:34:56.859317	AO02000600006208185414257284	AO02000600000090175075753453	120	000600009205457242666409	Conluido	Interna
+c016c9a0-78f0-4651-b3d8-ea94f6b0123b	2024-02-27 03:35:51.549916	AO02000400008175620309964053	AO02000600000090175075753453	120	000600004556961555813740	Negado	Interbancária
+5261d8ad-1d6c-4951-b1b5-ddb0d6cc342c	2024-02-27 03:38:38.978771	AO02000400008175620309964053	AO02000600000090175075753453	100	000600009491020827140114	Negado	Interbancária
+7c800fa5-7212-4547-8abf-7a6512d9e36f	2024-02-27 03:40:45.283807	AO02000400008175620309964053	AO02000600000090175075753453	100	000600009268682411236887	Processo	Interbancária
+79427094-6875-4a9d-bc88-ee39eaf524e0	2024-02-27 03:46:11.547362	AO02000400008175620309964053	AO02000600000090175075753453	140	000600009058489030748341	Processo	Interbancária
+14da5fd7-c7fc-49e5-813e-b4d7b798c054	2024-02-27 04:07:58.806678	AO02000400008175620309964053	AO02000600000090175075753453	60	000600008603061711875613	Conluido	Interbancária
+a56de0d3-e728-40c5-9d21-3968a1775ac2	2024-02-27 04:12:08.66892	AO02000400008175620309964053	AO02000600000090175075753453	100	000600001132243256291094	Conluido	Interbancária
+e7c67f6e-092b-41c5-a383-0562ace757cb	2024-02-27 04:14:00.634771	AO02000400008175620309964053	AO02000600000090175075753453	50	000600009077187827855058	Conluido	Interbancária
+5a333902-c475-4ace-bce6-08f9653f8e44	2024-02-27 04:25:43.311001	AO02000600000090175075753453	AO02000400008175620309964053	100	000400009624196668196955	Processo	Interbancária
+ea0290e6-9cb4-4824-86ad-be8dbf04455a	2024-02-27 04:29:14.073016	AO02000600000090175075753453	AO02000400008175620309964053	100	000400003731102328526240	Processo	Interbancária
+6b0c1a3d-0cbd-4d40-bfb9-34dac14be78b	2024-02-27 04:29:44.461255	AO02000400008175620309964053	AO02000600000090175075753453	100	000600008707908805101827	Conluido	Interbancária
+446c6cd3-fd89-4e36-9289-7cc5f8408836	2024-02-27 04:30:15.195712	AO02000600000090175075753453	AO02000400008175620309964053	60	000400007257575548734943	Processo	Interbancária
+\.
+
+
+--
+-- Name: depositos depositos_pkey; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.depositos
+    ADD CONSTRAINT depositos_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: levantamentos levantamentos_pkey; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.levantamentos
+    ADD CONSTRAINT levantamentos_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: transferencias transferencias_pkey; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.transferencias
+    ADD CONSTRAINT transferencias_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: depositos uk_depositos_numero_ordem; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.depositos
+    ADD CONSTRAINT uk_depositos_numero_ordem UNIQUE (numero_ordem);
+
+
+--
+-- Name: levantamentos uk_levantamentos_numero_ordem; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.levantamentos
+    ADD CONSTRAINT uk_levantamentos_numero_ordem UNIQUE (numero_ordem);
+
+
+--
+-- Name: transferencias uk_transferencias_numero_ordem; Type: CONSTRAINT; Schema: public; Owner: baitransacao
+--
+
+ALTER TABLE ONLY public.transferencias
+    ADD CONSTRAINT uk_transferencias_numero_ordem UNIQUE (numero_ordem);
+
+
+--
+-- Name: idx_depositos_numero_ordem; Type: INDEX; Schema: public; Owner: baitransacao
+--
+
+CREATE INDEX idx_depositos_numero_ordem ON public.depositos USING btree (numero_ordem);
+
+
+--
+-- Name: idx_levantamentos_numero_ordem; Type: INDEX; Schema: public; Owner: baitransacao
+--
+
+CREATE INDEX idx_levantamentos_numero_ordem ON public.levantamentos USING btree (numero_ordem);
+
+
+--
+-- Name: idx_transferencias_numero_ordem; Type: INDEX; Schema: public; Owner: baitransacao
+--
+
+CREATE INDEX idx_transferencias_numero_ordem ON public.transferencias USING btree (numero_ordem);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
