@@ -7,7 +7,7 @@
 |Adelino Garcia|13774|
 |Paciência Manuel|25991|
 
-<h2>Configuraçóes do microserviços</h2>
+<h2>⭐Configurações dos microserviços⭐</h2>
 
 |Nome do Microserviço|Nome da BD|Usuário da BD| Senha do usuário da BD|
 |:----:|:----:|:----:|:----:|
